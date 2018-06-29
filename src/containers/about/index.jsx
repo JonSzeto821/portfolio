@@ -1,6 +1,8 @@
 import React from 'react';
 import Contact from '../../components/contact';
 import About from '../../components/about';
+import AsNavFor from '../../components/carousel';
+
 
 const AboutContainer = props => {
 	const container = {
@@ -15,6 +17,7 @@ return(
 	   <h1>About Page</h1>
 	   <About props={props} />
 	   <Contact />
+	   <AsNavFor />
 	 </div>
 	 );
 };

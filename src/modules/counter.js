@@ -20,7 +20,7 @@ const initialState = {
       technology: [
         {
           name: 'HTML',
-          logo: 'require(../../styles/assets/HTML5_Logo.svg)',
+          logo: '../assets/HTML5_Logo.svg',
           altText: 'HTML Logo'
         },
         {

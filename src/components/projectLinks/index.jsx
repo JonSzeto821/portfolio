@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/button';
+// import {Link} from 'react-router-dom'
 
 const ProjectLinks = props => {
 	// console.log(props.application, props.github);
@@ -14,7 +15,8 @@ const ProjectLinks = props => {
 					<tr>
 						<td>
 							Application: {props.application}
-							<Button name={'Demo'} />
+		
+							<a href="https://github.com/JonSzeto821" rel="noopener noreferrer" target="_blank"><Button name={'Demo'} /></a>
 						</td>
 					</tr>
 					<tr>

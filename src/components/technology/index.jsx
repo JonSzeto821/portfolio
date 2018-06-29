@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../styles/assets/HTML5_Logo.svg';
+
 
 const Technology = props => {
 	const techLogo = {
