@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from '../../styles/assets/HTML5_Logo.svg';
-
 
 const Technology = props => {
 	const techLogo = {
 		width: '50px',
 		height: '50px',
-		'marginRight': '5px',
-		border: '1px dashed red'
+		'margin': '5px',
+		// border: '1px dashed red'
 	}
 
 	const techList = props.technology;

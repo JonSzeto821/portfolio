@@ -1,0 +1,124 @@
+.blue {
+	background-color: rgb(34,107,170);
+}
+
+.content-col {
+	background-color: rgb(37,162,77);
+	/*border-bottom: 1px solid black;*/
+	border-bottom: none;
+}
+
+.nav-col {
+	/*background-color: rgb(37,162,77);*/
+	text-align: center;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
+
+.carouselBottom div {
+	height: 60px;
+}
+
+.carouselBottom img{
+	margin: 10px auto;
+	margin-bottom: 0;
+	
+}
+
+.purple {
+	background-color: rgb(122,44,157);
+}
+
+.yellow {
+	background-color: rgb(236,186,16);
+}
+
+.orange {
+	background-color: rgb(222,105,28);
+
+}
+
+.grey {
+	background-color: rgb(131,149,149);
+}
+
+.picSize {
+	width: 50px;
+	height: 50px;
+}
+
+
+@media only screen and (max-width: 350px) {
+	.hide {
+		display: none;
+	}
+
+/*	.carouselBottom {
+		height: 70px;
+	}
+*/
+	/*.carouselBottom div {
+		height: 200px;
+	}*/
+
+}
+
+@media only screen and (min-width: 351px) {
+	.carouselBottom {
+		/*border: 2px dashed black;*/
+		height: 50%;
+	}
+
+	.carouselBottom h3 {
+		margin: 0 2.5px;
+		font-size: 26px;
+		/*height: 60px;*/
+	}
+
+	.carouselBottom div {
+		height: 120px;
+	}
+
+	.picSize {
+		width: 75px;
+		height: 75px;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	.content-col, .nav-col {
+		/*border: 3px solid black;*/
+		display: inline-block;
+		width: 50%;
+		height: 485px;
+		margin: 0;
+		
+	}
+
+	#carousel-container {
+		direction: rtl;
+	}
+
+	.content-col {
+		overflow-y: scroll;
+	}
+
+	.nav-col {
+		overflow-y: hidden;
+	}
+
+	.carouselTop div, .carouselBottom div {
+		border: none;
+		margin: 0;
+	}
+
+	.carouselBottom {
+		border-top: none;
+	}
+
+/*	.col-container {
+		border: 3px solid blue;
+		height: 500px;
+		overflow-y: scroll;
+	}*/
+}
