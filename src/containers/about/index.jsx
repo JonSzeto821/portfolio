@@ -1,7 +1,5 @@
 import React from 'react';
 import About from '../../components/about';
-import AsNavFor from '../../components/carousel';
-
 
 const AboutContainer = props => {
 	const container = {

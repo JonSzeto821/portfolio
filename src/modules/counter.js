@@ -12,8 +12,8 @@ const initialState = {
       test: 'testVALSDFAD'
     }
   },
-  project: {
-    project1: {
+  project: [
+    {
       name: 'Spotify Top Artists by Country',
       image: '../assets/HTML5_Logo.svg',
       description:
@@ -45,7 +45,7 @@ const initialState = {
         application: 'https://spotify-cap.herokuapp.com/'
       }
     },
-    project2: {
+    {
       name: 'Soccer Tactics',
       image: '../assets/Redux_Logo.svg',
       description:
@@ -92,7 +92,7 @@ const initialState = {
         application: 'https://soccertactics.herokuapp.com/'
       }
     },
-    project3: {
+    {
       name: 'Nutrition Search',
       image: '../assets/ReactJs_Logo.svg',
       description:
@@ -134,7 +134,7 @@ const initialState = {
         application: 'https://mactotal.netlify.com/'
       }
     }
-  },
+],
   carousel: {
     nav1: null,
     nav2: null

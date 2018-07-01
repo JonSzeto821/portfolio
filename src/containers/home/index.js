@@ -2,9 +2,9 @@ import React from 'react';
 import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import ProjectsContainer from '../projects';
-import AboutContainer from '../about';
-import ContactContainer from '../contact';
+// import ProjectsContainer from '../projects';
+// import AboutContainer from '../about';
+// import ContactContainer from '../contact';
 import Carousel from '../../components/carousel';
 
 

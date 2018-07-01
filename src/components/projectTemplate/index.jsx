@@ -3,12 +3,14 @@ import Technology from '../technology';
 import Links from '../projectLinks';
 
 const ProjectTemp = props => {
-	// console.log('ProjectProps123', props);
-	// console.log('name:', props.name);
-	// console.log('image:', props.image);
-	// console.log('description:', props.description);
-	// console.log('application:', props.application);
-	// console.log('github:', props.github);
+	console.log(props.project.name);
+	let name = props.project.name;
+	let description = props.project.description;
+	let image = props.project.image;
+	let technology = props.project.technology;
+	let application = props.project.links.application;
+	let github = props.project.links.github;
+
 	const projectTempContainer = {
 		border: '3px solid purple',
 		margin: '5px 10px',
@@ -23,32 +25,27 @@ const ProjectTemp = props => {
 
 	return(
 		<div style={projectTempContainer}>
-		<h2>Project component rendering!</h2>
-{/*			<table>
-							<tbody>
-								<tr>
-									<td>
-										{props.name}
-									</td>
-								</tr>
-								<tr>
-									<td>
-										{props.description}
-									</td>
-								</tr>
-							</tbody>
-						</table>
-							<img style={imgSize} name='name' src={props.image} alt='altText' />
-							<h3>Technology</h3>
-							<Technology 
-								technology={props.project.technology}
-								props={props}
-							/>
-							<Links 
-								props={props}
-								application={props.application}
-								github={props.github}
-							/>*/}
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<h2>{name}</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{description}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<img style={imgSize} name='name' src={image} alt='altText' />
+			<h3>Technology</h3>
+			<Technology technology={technology} />
+			<Links 
+				application={application}
+				github={github}
+			/>
 		</div>
 	);
 };

@@ -9,6 +9,7 @@ const Technology = props => {
 	}
 
 	const techList = props.technology;
+	console.log('techList', techList); 
 	let techItem = techList.map((arrayItem, i) => {
 		let [name, logo, altText] = [arrayItem.name, arrayItem.logo, arrayItem.altText];
 		return(

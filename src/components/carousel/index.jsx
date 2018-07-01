@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Button from '../../components/button';
 import About from '../../components/about';
 import {default as Project1} from '../../components/projectTemplate';
 import {default as Project2} from '../../components/projectTemplate';
 import {default as Project3} from '../../components/projectTemplate';
-import {default as Project4} from '../../components/projectTemplate';
+// import {default as Project4} from '../../components/projectTemplate';
 import Contact from '../../components/contact';
 import '../../styles/carousel.css'
 import aboutIcon from '../../styles/assets/about_icon.svg';
@@ -27,7 +26,8 @@ export default class Carousel extends Component {
   }
 
   componentDidMount() {
-    // console.log(this.props.props.project);
+    console.log(this.props.props.project);
+    console.log(this.props.props.project[1]);
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
@@ -61,19 +61,19 @@ export default class Carousel extends Component {
             </div>
             <div className="grey">
               <h3>Project 1</h3>
-              <Project1 />
+              <Project1 project={this.props.props.project[0]} />
             </div>
             <div className="blue">
               <h3>Project 2</h3>
-              <Project2 />
+              <Project2 project={this.props.props.project[1]} />
             </div>
             <div className="yellow">
               <h3>Project 3</h3>
-              <Project3 />
+              <Project3 project={this.props.props.project[2]} />
             </div>
             <div className="grey">
               <h3>Project 4</h3>
-              <Project4 />
+              {/*<Project4 />*/}
             </div>
             <div className="blue">
               <h3>Contact</h3>
