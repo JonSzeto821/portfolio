@@ -1,0 +1,9 @@
+.logoSize {
+	height: 32px;
+	wdith: 32px;
+}
+
+.borderStyle {
+	border: 1px solid black;
+	padding: 5px;
+}

@@ -26,8 +26,8 @@ export default class Carousel extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.props.project);
-    console.log(this.props.props.project[1]);
+    // console.log(this.props.props.project);
+    // console.log(this.props.props.project[1]);
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
@@ -37,8 +37,6 @@ export default class Carousel extends Component {
   render() {
     return (
       <div id="carousel-container">
-{/*        <h2>Slider Syncing (Carousel)</h2>
-        <h4>First Slider</h4>*/}
         <div className="col-container">
           <Slider
             asNavFor={this.state.nav2}
@@ -49,38 +47,28 @@ export default class Carousel extends Component {
             zIndex={1}
             className="carouselTop content-col"
           >
-            <div className="yellow">
+            <div className="yellow content-container">
               <About props={this.props.props} />
-              {/*<Project1 
-                name={this.props.props.project.project1.name}
-                image={this.props.props.project.project1.image}
-                description={this.props.props.project.project1.description}
-                application={this.props.props.project.project1.links.application}
-                github={this.props.props.project.project1.links.github}
-              />*/}
             </div>
-            <div className="grey">
-              <h3>Project 1</h3>
+            <div className="orange content-container">
               <Project1 project={this.props.props.project[0]} />
             </div>
-            <div className="blue">
-              <h3>Project 2</h3>
+            <div className="blue content-container">
               <Project2 project={this.props.props.project[1]} />
             </div>
-            <div className="yellow">
-              <h3>Project 3</h3>
+            <div className="yellow content-container">
               <Project3 project={this.props.props.project[2]} />
             </div>
-            <div className="grey">
+            <div className="orange content-container">
               <h3>Project 4</h3>
               {/*<Project4 />*/}
             </div>
-            <div className="blue">
+            <div className="blue content-container">
               <h3>Contact</h3>
               <Contact />
             </div>
           </Slider>
-{/*        <h4>Second Slider</h4>*/}
+
         <Slider
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
@@ -93,12 +81,13 @@ export default class Carousel extends Component {
           verticalSwiping={true}
           zIndex={2}
           className="carouselBottom nav-col"
+          id='carouselBottomHeight'
           >
           <div className="yellow">
             <h3 className="hide">About Me</h3>
             <img className="picSize" id="aboutIcon" src={aboutIcon} alt="About Icon" />
           </div>
-          <div className="grey">
+          <div className="orange">
             <h3 className="hide">Discover Artist</h3>
             <img className="picSize" id="musicIcon" src={musicIcon} alt="Music Icon" />
           </div>
@@ -110,7 +99,7 @@ export default class Carousel extends Component {
             <h3 className="hide">Nutrition Search</h3>
             <img className="picSize" id="nutritionIcon" src={nutritionIcon} alt="Nutrition Icon" />
           </div>
-          <div className="grey">
+          <div className="orange">
             <h3 className="hide">Quiz App</h3>
             <img className="picSize" id="quizIcon" src={quizIcon} alt="Quiz Icon" />
           </div>

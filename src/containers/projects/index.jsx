@@ -14,9 +14,9 @@ const ProjectsContainer = props => {
 	return(
 		<div style={containerStyle}>
 			<h1>Project Container</h1>
-			<Project1 project={props.project.project1} />
+{/*			<Project1 project={props.project.project1} />
 			<Project2 project={props.project.project2} />
-			<Project3 project={props.project.project3} />
+			<Project3 project={props.project.project3} />*/}
 		</div>
 		);
 };

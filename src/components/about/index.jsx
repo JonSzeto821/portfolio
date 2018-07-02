@@ -1,51 +1,24 @@
 import React from 'react';
+import '../../styles/about.css';
 
 const About = props => {
-	const background ={
-		backgroundColor: '#F2F2F2'
-	}
-	
-	const center = {
-		margin: 'auto'
-	}
-
-	const centerText = {
-		textAlign: 'center'
-	}
-
-	const imgSize = {
-		width: '200px',
-		height: '200px',
-		borderRadius: '100%',
-		border: '1px solid black'
-	}
-
-	const fontLg = {
-		fontSize: '24px'
-	}
-
-	const fontMed = {
-		fontSize: '20px'
-	}
-
-	// console.log(props.props);
 	return(
-		<div style={Object.assign({}, centerText, background)}>
+		<div className="centerText background">
 			<h1>About Component</h1>
-			<table style={center}>
+			<table className="center">
 				<tbody >
 					<tr>
-						<td style={fontLg}>
+						<td className="fontLg">
 							{props.props.about.name}
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<img style={Object.assign({}, imgSize, center)} name='name' src={props.props.about.image} alt='altText' />
+							<img className="center imgSize" name='name' src={props.props.about.image} alt='altText' />
 						</td>
 					</tr>
 					<tr>
-						<td style={fontMed}>
+						<td className="fontMed">
 							Bio: {props.props.about.bio}
 						</td>
 					</tr>

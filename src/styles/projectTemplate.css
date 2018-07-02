@@ -1,0 +1,32 @@
+#projectTempContainer {
+	/*margin: 0 10px;*/
+	padding: 0 10px 10px 10px;
+	background-color: #F2F2F2;
+	text-align: center;
+	/*border-radius: 5px;*/
+	min-height: 581px; /*make final tweaks once all content is in*/
+	height: 600px;
+	border-top: 2px solid #F2F2F2;
+}
+
+#projectTempContainer img {
+	margin: 5px auto;
+}
+
+.imgSize {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+@media only screen and (min-width: 401px) {
+	#projectTempContainer {
+		min-height: 560px; /*make final tweaks once all content is in*/
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	#projectTempContainer {
+		min-height: 475px; /*make final tweaks once all content is in*/
+	}
+}

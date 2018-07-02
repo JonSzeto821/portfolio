@@ -1,18 +1,21 @@
 .blue {
 	background-color: rgb(34,107,170);
+
 }
 
 .content-col {
 	background-color: rgb(37,162,77);
 	/*border-bottom: 1px solid black;*/
 	border-bottom: none;
+	height: 350px;
+	overflow-y: scroll;
 }
 
 .nav-col {
 	/*background-color: rgb(37,162,77);*/
 	text-align: center;
 	margin: 0 auto;
-	border-top: 1px solid black;
+	/*border-top: 1px solid black;*/
 }
 
 .carouselBottom div {
@@ -47,50 +50,78 @@
 	height: 50px;
 }
 
+/*.carouselBottom > .slick-list {
+	border: 3px dashed blue;
+	overflow: hidden ;
+}*/
 
-@media only screen and (max-width: 350px) {
+.slick-vertical .slick-slide {
+	border: none;
+	background-color: #F2F2F2;
+
+}
+
+.slick-vertical.slick-initialized > div > div > div.slick-slide.slick-active.slick-current {
+/*	border-top-right-radius: 20px;*/
+	color: #F2F2F2;
+	/*border-left: 4px solid #F2F2F2;*/
+	border-left: none;
+}
+
+#carouselBottomHeight {
+	max-height: 120px;
+}
+
+
+@media only screen and (max-width: 700px) {
 	.hide {
 		display: none;
 	}
-
-/*	.carouselBottom {
-		height: 70px;
-	}
-*/
-	/*.carouselBottom div {
-		height: 200px;
-	}*/
-
 }
 
 @media only screen and (min-width: 351px) {
 	.carouselBottom {
-		/*border: 2px dashed black;*/
 		height: 50%;
 	}
 
 	.carouselBottom h3 {
 		margin: 0 2.5px;
 		font-size: 26px;
-		/*height: 60px;*/
 	}
 
 	.carouselBottom div {
-		height: 120px;
+		height: 80px;
+	}
+
+	.nav-col {
+		border-top: none;
+	}
+
+	.nav-col {
+		/*border: 1px solid black;*/
 	}
 
 	.picSize {
 		width: 75px;
 		height: 75px;
 	}
+
+	.slick-vertical.slick-initialized > div > div > div.slick-slide.slick-active.slick-current {
+		border-left: 4px solid #F2F2F2;
+	}
+
+	.slick-vertical.slick-initialized > div > div > div.slick-slide.slick-active.slick-current img {
+		filter: invert(1);
+	}
+
+
 }
 
 @media only screen and (min-width: 701px) {
 	.content-col, .nav-col {
 		/*border: 3px solid black;*/
 		display: inline-block;
-		width: 50%;
-		height: 485px;
+		min-height: 480px;
 		margin: 0;
 		
 	}
@@ -101,14 +132,16 @@
 
 	.content-col {
 		overflow-y: scroll;
+		width: 75%;
 	}
 
 	.nav-col {
 		overflow-y: hidden;
+		width: 25%;
 	}
 
 	.carouselTop div, .carouselBottom div {
-		border: none;
+		/*border: 1px solid #F2F2F2;*/
 		margin: 0;
 	}
 
@@ -116,9 +149,17 @@
 		border-top: none;
 	}
 
-/*	.col-container {
-		border: 3px solid blue;
-		height: 500px;
-		overflow-y: scroll;
-	}*/
+	.carouselBottom div {
+		height: 120px;
+	}
+
+	.col-container {
+		/*border: 3px solid blue;*/
+		height: 480px;
+		overflow-y: hidden;
+	}
+
+	.content-container {
+		height: 480px;
+	}
 }

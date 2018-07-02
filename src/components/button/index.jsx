@@ -1,11 +1,12 @@
 import React from 'react';
+import '../../styles/button.css';
 
-const About = props => {
+const Button = props => {
 	return(
 		<div>
-			<button>{props.name}</button>
+			<button className="button">{props.name}</button>
 		</div>
 	);
 };
 
-export default About;
+export default Button;

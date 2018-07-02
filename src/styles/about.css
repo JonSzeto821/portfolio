@@ -1,0 +1,26 @@
+.background {
+	background-color: #F2F2F2;
+}
+
+.center {
+	margin: auto;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.imgSize {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	border: 1px solid black;
+}
+
+.fontLg {
+	font-size: 24px;
+}
+
+.fontMed {
+	font-size: 20px;
+}
