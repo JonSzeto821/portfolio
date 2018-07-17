@@ -4,7 +4,7 @@ import About from '../../components/about';
 import {default as Project1} from '../../components/projectTemplate';
 import {default as Project2} from '../../components/projectTemplate';
 import {default as Project3} from '../../components/projectTemplate';
-// import {default as Project4} from '../../components/projectTemplate';
+import {default as Project4} from '../../components/projectTemplate';
 import Contact from '../../components/contact';
 import '../../styles/carousel.css'
 import aboutIcon from '../../styles/assets/about_icon.svg';
@@ -21,94 +21,121 @@ export default class Carousel extends Component {
     super(props);
     this.state = {
       nav1: null,
-      nav2: null
+      nav2: null,
+      pageNumber: 1
     };
   }
 
   componentDidMount() {
-    // console.log(this.props.props.project);
-    // console.log(this.props.props.project[1]);
+    // console.log(this.props.props.icons[0]);
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
     });
   }
 
+  afterChangeHandler = currentSlide => {
+    console.log(currentSlide);
+    // this.props.updateInitialSlide(currentSlide);
+    this.setState({
+      pageNumber: currentSlide++
+    })
+  } 
+
   render() {
     return (
       <div id="carousel-container">
-        <div className="col-container">
+          {this.state.pageNumber}
           <Slider
             asNavFor={this.state.nav2}
             ref={slider => (this.slider1 = slider)}
-            // dots={true}
             arrows={false}
             mobileFirst={true}
-            zIndex={1}
             className="carouselTop content-col"
+            afterChange={this.afterChangeHandler}
           >
-            <div className="yellow content-container">
+            <div className="content-container">
               <About props={this.props.props} />
             </div>
-            <div className="orange content-container">
-              <Project1 project={this.props.props.project[0]} />
+            <div className="content-container">
+              <Project1 
+                project={this.props.props.project[0]} 
+                icons={this.props.props.icons[0]} 
+              />
             </div>
-            <div className="blue content-container">
-              <Project2 project={this.props.props.project[1]} />
+            <div className="content-container">
+              <Project2 
+                project={this.props.props.project[1]} 
+                icons={this.props.props.icons[1]} 
+              />
             </div>
-            <div className="yellow content-container">
-              <Project3 project={this.props.props.project[2]} />
+            <div className="content-container">
+              <Project3 
+                project={this.props.props.project[2]} 
+                icons={this.props.props.icons[2]} 
+              />
             </div>
-            <div className="orange content-container">
-              <h3>Project 4</h3>
-              {/*<Project4 />*/}
+            <div className="content-container">
+              <Project4 
+                project={this.props.props.project[3]} 
+                icons={this.props.props.icons[3]} 
+              />
             </div>
-            <div className="blue content-container">
-              <h3>Contact</h3>
-              <Contact />
+            <div className="content-container">
+              <Contact links={this.props.props.about.links} />
             </div>
           </Slider>
-
-        <Slider
-          asNavFor={this.state.nav1}
-          ref={slider => (this.slider2 = slider)}
-          slidesToShow={4}
-          swipeToSlide={true}
-          focusOnSelect={true}
-          arrows={false}
-          // centerMode={true}
-          vertical={true}
-          verticalSwiping={true}
-          zIndex={2}
-          className="carouselBottom nav-col"
-          id='carouselBottomHeight'
+          <Slider
+            asNavFor={this.state.nav1}
+            ref={slider => (this.slider2 = slider)}
+            slidesToShow={4}
+            swipeToSlide={true}
+            // focusOnSelect={true}
+            arrows={false}
+            vertical={true}
+            verticalSwiping={true}
+            responsive={[
+              {
+                breakpoint: 701,
+                settings: {
+                  slidesToShow: 1,
+                }
+              },
+              // {
+              //   breakpoint: 351,
+              //   settings: {
+              //     slidesToShow: 1,
+              //   }
+              // }
+            ]}
+            className="carouselBottom nav-col"
+            id='carouselBottomHeight'
           >
-          <div className="yellow">
-            <h3 className="hide">About Me</h3>
-            <img className="picSize" id="aboutIcon" src={aboutIcon} alt="About Icon" />
-          </div>
-          <div className="orange">
-            <h3 className="hide">Discover Artist</h3>
-            <img className="picSize" id="musicIcon" src={musicIcon} alt="Music Icon" />
-          </div>
-          <div className="blue">
-            <h3 className="hide">Soccer Tactics</h3>
-            <img className="picSize" id="soccerIcon" src={soccerIcon} alt="Soccer Icon" />
-          </div>
-          <div className="yellow">
-            <h3 className="hide">Nutrition Search</h3>
-            <img className="picSize" id="nutritionIcon" src={nutritionIcon} alt="Nutrition Icon" />
-          </div>
-          <div className="orange">
-            <h3 className="hide">Quiz App</h3>
-            <img className="picSize" id="quizIcon" src={quizIcon} alt="Quiz Icon" />
-          </div>
-          <div className="blue">
-            <h3 className="hide">Contact</h3>
-            <img className="picSize" id="contactIcon" src={contactIcon} alt="Contact Icon" />
-          </div>
-        </Slider>
-        </div>
+            <div className="green">
+              <h3 className="hide">ABOUT ME</h3>
+              <img className="picSize" id="aboutIcon" src={aboutIcon} alt="About Icon" />
+            </div>
+            <div className="red">
+              <h3 className="hide">DISCOVER ARTIST</h3>
+              <img className="picSize" id="musicIcon" src={musicIcon} alt="Music Icon" />
+            </div>
+            <div className="blue">
+              <h3 className="hide">SOCCER TACTICS</h3>
+              <img className="picSize" id="soccerIcon" src={soccerIcon} alt="Soccer Icon" />
+            </div>
+            <div className="orange">
+              <h3 className="hide">NUTRITION SEARCH</h3>
+              <img className="picSize" id="nutritionIcon" src={nutritionIcon} alt="Nutrition Icon" />
+            </div>
+            <div className="purple">
+              <h3 className="hide">QUIZ APP</h3>
+              <img className="picSize" id="quizIcon" src={quizIcon} alt="Quiz Icon" />
+            </div>
+            <div className="yellow">
+              <h3 className="hide">CONTACT</h3>
+              <img className="picSize" id="contactIcon" src={contactIcon} alt="Contact Icon" />
+            </div>
+          </Slider>
       </div>
     );
   }

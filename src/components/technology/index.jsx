@@ -1,30 +1,22 @@
 import React from 'react';
+import '../../styles/technology.css';
 
 const Technology = props => {
 	const techLogo = {
-		width: '50px',
-		height: '50px',
-		margin: '5px',
-		display: 'inline-block'
-		// border: '1px dashed red'
-
-	}
-
-	const center ={
-		textAlign: 'center'
+		display: 'inline-block',
+		margin: '0 5px 0 0'
 	}
 
 	const techList = props.technology;
-	// console.log('techList', techList); 
 	let techItem = techList.map((arrayItem, i) => {
 		let [name, logo, altText] = [arrayItem.name, arrayItem.logo, arrayItem.altText];
 		return(
-			<img style={techLogo} key={i} name={name} src={logo} alt={altText} />
+			<img style={techLogo} className="techLogo" key={i} name={name} src={logo} alt={altText} />
 		);
 	});
 	
 	return(
-		<div style={center}>
+		<div className="center">
 			{techItem}
 		</div>
 	);

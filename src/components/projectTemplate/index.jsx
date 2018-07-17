@@ -3,17 +3,14 @@ import Technology from '../technology';
 import Links from '../projectLinks';
 import '../../styles/projectTemplate.css';
 
-const ProjectTemp = props => {
-	const name = props.project.name;
-	const description = props.project.description;
-	const image = props.project.image;
-	const technology = props.project.technology;
-	const application = props.project.links.application;
-	const github = props.project.links.github;
 
+const ProjectTemp = props => {
+	const [name, description, icon] = [props.project.name, props.project.description, props.icons]
+	const [technology, application, github] = [props.project.technology, props.project.links.application, props.project.links.github];
+	
 	return(
 		<div id="projectTempContainer">
-			<table>
+			<table className="left">
 				<tbody>
 					<tr>
 						<td>
@@ -25,15 +22,36 @@ const ProjectTemp = props => {
 							{description}
 						</td>
 					</tr>
+					<tr>
+						<td>
+							<img 
+								className="iconSize" 
+								name='name' 
+								src={icon.image} 
+								alt={icon.altText} 
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>Technology</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Technology technology={technology} />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Links 
+								application={application}
+								github={github}
+							/>
+						</td>
+					</tr>
 				</tbody>
-			</table>
-			<img className="imgSize" name='name' src={image} alt='altText' />
-			{/*<h3>Technology</h3>*/}
-			<Technology technology={technology} />
-			<Links 
-				application={application}
-				github={github}
-			/>
+			</table>		
 		</div>
 	);
 };

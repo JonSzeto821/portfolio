@@ -1,9 +1,63 @@
+#contactContainer {
+	padding: 0 5px 10px 5px;
+	background-color: #F2F2F2;
+	text-align: center;
+	min-height: 70vh;
+	color: #696969;
+}
+
+#contactContainer table {
+	margin: auto;
+}
+
+#contactContainer tbody tr {
+	/*background-color: yellow;*/
+	padding: 0;
+	margin: 0;
+}
+
+#contactContainer h2 {
+	font-size: 42px;
+	margin: 0;
+}
+
 .logoSize {
 	height: 32px;
 	wdith: 32px;
 }
 
 .borderStyle {
-	border: 1px solid black;
-	padding: 5px;
+	/*border: 1px solid black;*/
+	padding: 10px;
+}
+
+#contactContainer p {
+	padding-left: 10px;
+	text-align: left;
+	margin: 10px 0;
+}
+
+ .link {
+ 	font-size: 24px;
+ 	text-decoration-line: none;
+ 	font-weight: 900;
+ }
+
+@media only screen and (min-width: 401px) {
+	#contactContainer {
+		min-height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	#contactContainer {
+		text-align: left;
+		min-height: 100vh;
+		padding-top: calc(100vh/8);
+	}
+
+	#contactContainer table {
+		margin-left: 15px;
+		margin-right: 5px;
+	}
 }

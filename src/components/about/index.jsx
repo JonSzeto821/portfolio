@@ -1,25 +1,32 @@
 import React from 'react';
+import swipeIcon from '../../styles/assets/swipe_icon.svg';
 import '../../styles/about.css';
 
 const About = props => {
 	return(
-		<div className="centerText background">
-			<h1>About Component</h1>
+		<div id="aboutContainer">
 			<table className="center">
-				<tbody >
+				<thead>
 					<tr>
-						<td className="fontLg">
-							{props.props.about.name}
+						<td>
+							<h1>{props.props.about.name}</h1>
 						</td>
 					</tr>
+				</thead>
+				<tbody >
 					<tr>
 						<td>
 							<img className="center imgSize" name='name' src={props.props.about.image} alt='altText' />
 						</td>
 					</tr>
 					<tr>
-						<td className="fontMed">
-							Bio: {props.props.about.bio}
+						<td>
+							{props.props.about.bio}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img className="center swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
 						</td>
 					</tr>
 				</tbody>
