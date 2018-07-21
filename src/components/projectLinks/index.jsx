@@ -14,11 +14,16 @@ const ProjectLinks = props => {
 				<tbody>
 					<tr>
 						<td>
-							<a href={hrefApp} rel="noopener noreferrer" target="_blank"><Button className="launch" name={'Launch'} /></a>
+						<div className="container">
+							<a className="btn btn-2" href={hrefApp} rel="noopener noreferrer" target="_blank">Launch</a>
+						</div>
 						</td>
 						<td>
-							<a href={hrefGitHub} rel="noopener noreferrer" target="_blank"><Button className="github" name={'GitHub'} /></a>
-							</td>
+						<div className="container">
+							<a className="btn btn-2" href={hrefGitHub} rel="noopener noreferrer" target="_blank">GitHub</a>
+						</div>
+							{/*<a href={hrefGitHub} rel="noopener noreferrer" target="_blank"><Button className="github" name={'GitHub'} /></a>*/}
+						</td>
 					</tr>
 				</tbody>
 			</table>

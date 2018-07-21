@@ -1,25 +1,27 @@
-.green{
-	background-color: rgb(16, 172, 132);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300');
+
+.green {
+  background-color: rgb(16, 172, 132);
 }
 
-.blue{
-	background-color: rgb(10, 189, 227);
+.blue {
+  background-color: rgb(10, 189, 227);
 }
 
-.purple{
-	background-color: rgb(95, 39, 205);
+.purple {
+  background-color: rgb(95, 39, 205);
 }
 
-.orange{
-	background-color: rgb(255, 159, 67);
+.orange {
+  background-color: rgb(255, 159, 67);
 }
 
-.red{
-	background-color: rgb(238, 82, 83);
+.red {
+  background-color: rgb(238, 82, 83);
 }
 
-.yellow{
-	background-color: rgb(254, 202, 87);
+.yellow {
+  background-color: rgb(254, 202, 87);
 }
 
 /*.green, .blue, .purple, .orange, .red, .yellow {
@@ -31,63 +33,95 @@
 }*/
 
 .nav-col {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#carousel-container, .carouselBottom, .carouselTop {
-	margin: 0;
+/*.center {
+	text-align: center;
+}*/
+
+#carousel-container,
+.carouselBottom,
+.carouselTop {
+  margin: 0;
+}
+
+#carousel-container {
+  height: 1000px;
+  overflow: scroll;
 }
 
 .carouselBottom {
-    position: fixed;
-    top: calc(100vh - 80px);
+  position: fixed;
+  top: calc(100vh - 80px);
 }
 
 .carouselBottom div {
-	height: 60px;
+  height: 60px;
 }
 
-.carouselBottom img{
-	margin: 10px auto;
-	margin-bottom: 0;
+.carouselBottom img {
+  margin: 10px auto;
+  margin-bottom: 0;
 }
 
-.carouselBottom div:hover{
-	cursor: pointer;
+.carouselBottom div:hover {
+  cursor: pointer;
+}
+
+.content-container {
+  height: 3000px;
 }
 
 .picSize {
-	width: 60px;
-	height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .slick-vertical .slick-slide {
-	border: none;
-	background-color: #F2F2F2;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .carouselBottom div {
-	height: 80px;
+  height: 80px;
 }
 
 /*current card text*/
-.slick-vertical.slick-initialized > div > div > div.slick-slide.slick-active.slick-current {
-	color: #F2F2F2;
-	border-left: none;
+.slick-vertical.slick-initialized
+  > div
+  > div
+  > div.slick-slide.slick-active.slick-current {
+  color: #f2f2f2;
+  border-left: none;
 }
 
 /*current card image*/
-.slick-vertical.slick-initialized > div > div > div.slick-slide.slick-active.slick-current img {
-	filter: invert(.92);
+.slick-vertical.slick-initialized
+  > div
+  > div
+  > div.slick-slide.slick-active.slick-current
+  img {
+  filter: invert(0.92);
+}
+
+#carousel-container #pageNumber {
+  /*position: relative;*/
+  /*bottom: 0;*/
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  text-align: center;
+  width: 100vw;
+  color: #a4a4a4;
 }
 
 @media only screen and (max-width: 700px) {
-	.hide {
-		display: none;
-	}
+  .hide {
+    display: none;
+  }
 
-/*	.carouselBottom img {
+  /*	.carouselBottom img {
 	    margin: 10px auto;
 	    margin-bottom: 0;
 	    position: absolute;
@@ -97,64 +131,71 @@
 	}*/
 }
 @media only screen and (min-width: 351px) {
-	.carouselBottom {
-		height: 50%;
-	}
+  .carouselBottom {
+    height: 50%;
+  }
 
-	.carouselBottom h3 {
-		margin: 0 2.5px;
-		font-size: 22px;
-	}
+  .carouselBottom h3 {
+    margin: 0 2.5px;
+    font-size: 22px;
+  }
 
-
-
-	.nav-col {
-		border-top: none;
-	}
+  .nav-col {
+    border-top: none;
+  }
 }
 
 @media only screen and (min-width: 701px) {
-	.content-col, .nav-col {
-		display: inline-block;
-		margin: 0;
-		
-	}
+  .content-col,
+  .nav-col {
+    display: inline-block;
+    margin: 0;
+  }
 
-	#carousel-container {
-		direction: rtl;
-	}
+  #carousel-container {
+    direction: rtl;
+    margin: auto;
+  }
 
-	.content-col {
-		overflow-y: hidden;
-		width: 75%;
-		height: 100vh;
-	}
+  #carousel-container #pageNumber {
+    direction: ltr;
+    text-align: center;
+    font-weight: 100;
+    width: 75vw;
+  }
 
-	.nav-col {
-		overflow-y: hidden;
-		width: 25%;
-		height: 100vh;
-	}
+  .content-col {
+    /*overflow-y: hidden;*/
+    width: 75%;
+    /*height: 100vh;*/
+  }
 
-	.carouselBottom h3 {
-		margin-top: 10px;
-	}
+  .nav-col {
+    /*overflow-y: hidden;*/
+    width: 25%;
+    /*height: 100vh;*/
+  }
 
-	.carouselTop div, .carouselBottom div {
-		/*margin: 0;*/
-	}
+  .carouselBottom h3 {
+    margin-top: 10px;
+  }
 
-	.carouselBottom {
-		border-top: none;
-	    top: 0;
-	}
+  .carouselTop div,
+  .carouselBottom div {
+    /*margin: 0;*/
+  }
 
-	.carouselBottom div {
-		height: 25vh;
-	}
+  .carouselBottom {
+    border-top: none;
+    top: 0;
+  }
 
-	.picSize {
-		width: 100px;
-		height: 100px;
-	}
+  .carouselBottom div {
+    height: 25vh;
+  }
+
+  .picSize {
+    width: 100px;
+    height: 100px;
+  }
 }

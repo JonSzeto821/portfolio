@@ -2,6 +2,7 @@ import React from 'react';
 import GHIcon from '../../styles/assets/GH_Icon.svg';
 import LIIcon from '../../styles/assets/LI_Icon.svg';
 import EmailIcon from '../../styles/assets/Email_Icon.svg';
+import LocationIcon from '../../styles/assets/location_icon.svg';
 import '../../styles/contact.css';
 import '../../styles/projectTemplate.css';
 
@@ -10,16 +11,19 @@ const Contact = props => {
 	const email = props.links.contact.email;
 	const linkedin = props.links.linkedin;
 	const github = props.links.github;
+	const location = props.location;
+	const phone = props.phone;
 
 	return(
 		<div id="contactContainer">
-			
 			<table>
-				<thead>
+				<tbody>
 					<tr>
 						<td colSpan="2"><h2>Contacts</h2></td>
 					</tr>
-				</thead>
+				</tbody>
+			</table>
+			<table>
 				<tbody>
 					<tr className="borderStyle">
 						<td><a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a></td>
@@ -32,6 +36,18 @@ const Contact = props => {
 					<tr className="borderStyle">
 						<td><img className="logoSize" id="EmailIcon" src={EmailIcon} alt="Email Icon" /></td>
 						<td><a href={email} className="link">Email</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<tbody>
+					<tr className="borderStyle">
+						<td><img className="logoSize" id="LocationIcon" src={LocationIcon} alt="Location Icon" /></td>
+						<td>{location}</td>
+					</tr>
+					<tr className="borderStyle">
+						<td></td>
+						<td>{phone}</td>
 					</tr>
 				</tbody>
 			</table>

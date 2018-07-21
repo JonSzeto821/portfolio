@@ -22,12 +22,14 @@ export default class Carousel extends Component {
     this.state = {
       nav1: null,
       nav2: null,
-      pageNumber: 1
+      pageNumber: 0
     };
-  }
+  } 
 
   componentDidMount() {
+    // console.log('carousel', this.props); 
     // console.log(this.props.props.icons[0]);
+    // console.log('ABOUT:', this.props.props.about.location, this.props.props.about.phone);
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
@@ -35,7 +37,7 @@ export default class Carousel extends Component {
   }
 
   afterChangeHandler = currentSlide => {
-    console.log(currentSlide);
+    // console.log(currentSlide);
     // this.props.updateInitialSlide(currentSlide);
     this.setState({
       pageNumber: currentSlide++
@@ -45,7 +47,7 @@ export default class Carousel extends Component {
   render() {
     return (
       <div id="carousel-container">
-          {this.state.pageNumber}
+          <div id="pageNumber">{this.state.pageNumber + 1}|6</div>
           <Slider
             asNavFor={this.state.nav2}
             ref={slider => (this.slider1 = slider)}
@@ -53,6 +55,7 @@ export default class Carousel extends Component {
             mobileFirst={true}
             className="carouselTop content-col"
             afterChange={this.afterChangeHandler}
+            autoFocus
           >
             <div className="content-container">
               <About props={this.props.props} />
@@ -82,15 +85,20 @@ export default class Carousel extends Component {
               />
             </div>
             <div className="content-container">
-              <Contact links={this.props.props.about.links} />
+              <Contact 
+                links={this.props.props.about.links}  
+                location={this.props.props.about.location}
+                phone={this.props.props.about.phone}
+              />
             </div>
           </Slider>
+          
           <Slider
             asNavFor={this.state.nav1}
             ref={slider => (this.slider2 = slider)}
             slidesToShow={4}
             swipeToSlide={true}
-            // focusOnSelect={true}
+            focusOnSelect={true}
             arrows={false}
             vertical={true}
             verticalSwiping={true}

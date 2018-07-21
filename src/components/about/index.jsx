@@ -5,7 +5,7 @@ import '../../styles/about.css';
 const About = props => {
 	return(
 		<div id="aboutContainer">
-			<table className="center">
+			<table>
 				<thead>
 					<tr>
 						<td>
