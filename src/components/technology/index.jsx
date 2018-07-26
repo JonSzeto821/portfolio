@@ -16,7 +16,7 @@ const Technology = props => {
 	});
 	
 	return(
-		<div className="center">
+		<div className="center technology">
 			{techItem}
 		</div>
 	);

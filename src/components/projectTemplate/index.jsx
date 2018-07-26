@@ -3,11 +3,16 @@ import Technology from '../technology';
 import Links from '../projectLinks';
 import '../../styles/projectTemplate.css';
 import Slider from "react-slick";
+import ImageSlider from '../imageSlider';
 
 
 const ProjectTemp = props => {
+	// console.log(props);
 	const image = props.project.screenshot || [];
 	const [name, description, icon] = [props.project.name, props.project.description, props.icons]
+	// console.log(props.project.additionalContent);
+	// const extraContent = props.project.additionalContent || '';
+	// console.log(extraContent);
 	const [technology, application, github] = [props.project.technology, props.project.links.application, props.project.links.github];
 	
 	let screenshots = image.map((arrayItem, i) => {
@@ -24,23 +29,31 @@ const ProjectTemp = props => {
 
 	return(
 		<div id="projectTempContainer">
+			<ImageSlider />
+
 			<table>
 				<thead>
 					<tr>
 						<td className="hide-mobile">
-							<img 
+							{/*<img 
 								className={["iconSize"].join(' ')} // remove invert
 								name='name' 
 								src={icon.image} 
 								alt={icon.altText} 
-							/>
+							/>*/}
 						</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td className="title">
-							<h2>{name}</h2>
+							<h2>{name}</h2> 
+							<img 
+								className={["iconSize", "hide-mobile"].join(' ')} // remove invert
+								name='name' 
+								src={icon.image} 
+								alt={icon.altText} 
+							/>
 						</td>
 					</tr>
 					<tr>
@@ -48,6 +61,11 @@ const ProjectTemp = props => {
 							{description}
 						</td>
 					</tr>
+{/*					<tr>
+						<td className="extraContent">
+							{extraContent}
+						</td>
+					</tr>*/}
 					<tr>
 						<td className="hide-desktop">
 							<img 
@@ -57,6 +75,9 @@ const ProjectTemp = props => {
 								alt={icon.altText} 
 							/>
 						</td>
+					</tr>
+					<tr>
+						<td><ImageSlider /></td>
 					</tr>
 					<tr>
 						<td className={["screenshots", "hide-mobile"].join(' ')}>
@@ -79,6 +100,11 @@ const ProjectTemp = props => {
 					</tr>
 					<tr>
 						<td>
+						
+						</td>
+					</tr>
+					<tr>
+						<td>
 							<h3>Technology</h3>
 						</td>
 					</tr>
@@ -88,7 +114,7 @@ const ProjectTemp = props => {
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td className="buttons">
 							<Links 
 								application={application}
 								github={github}

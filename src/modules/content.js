@@ -2,8 +2,12 @@ const initialState = {
   about: {
     name: 'Jon Szeto',
     image: '../assets/HTML5_Logo.svg',
-    bio:
-      'front-end engineer in training..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar massa in tincidunt placerat. Nullam et tempus erat. Suspendisse fermentum, turpis non vehicula auctor, mi orci euismod purus, eu placerat arcu augue at risus. Fusce ex magna, vestibulum vel neque in, interdum tempor erat. Proin tortor nisi, tristique eget vestibulum nec, fringilla eu ex. Praesent blandit orci mi, at mattis tellus condimentum et.front-end engineer in training..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar massa in tincidunt placerat. Nullam et tempus erat. Suspendisse fermentum, turpis non vehicula auctor, mi orci euismod purus, eu placerat arcu augue at risus. Fusce ex magna, vestibulum vel neque in, interdum tempor erat. Proin tortor nisi, tristique eget vestibulum nec, fringilla eu ex. Praesent blandit orci mi, at mattis tellus condimentum et.front-end engineer in training.....',
+    bio: {
+      p1:
+        'front-end engineer in training..... I’ve had prior software development experience as a Systems Analyst. Transitioned into a customer facing role. I coordinated with software integrations teams from publishers and for-profit institutions. I provided assistance with familiarizing them to the company’s APIs and how they are used. This peaked my interest into understanding how they APIs are built. Between this and wanting to be back on a development team and building products again, led me down the engineering route.',
+      p2:
+        'I am currently based in Raleigh, NC. My interests include technology, live music, soccer, and powerlifting.'
+    },
     links: {
       github: 'https://github.com/JonSzeto821',
       linkedin: 'https://linkedin.com/in/JonathanSzeto',
@@ -16,8 +20,18 @@ const initialState = {
   },
   project: [
     {
-      name: 'Spotify Top Artists by Country',
+      name: 'Spotify Global',
       screenshot: [
+        {
+          name: 'screenshot1',
+          image: '../assets/projects/spotify/spotify-mediumVP.png',
+          altText: 'Spotify App Image'
+        },
+        {
+          name: 'screenshot1',
+          image: '../assets/projects/spotify/spotify-mediumVP.png',
+          altText: 'Spotify App Image'
+        },
         {
           name: 'screenshot1',
           image: '../assets/projects/spotify/spotify-mediumVP.png',
@@ -25,7 +39,8 @@ const initialState = {
         }
       ],
       description:
-        'The application was developed with the objective of identifying the top artists, via Spotify API, based on country.',
+        'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify',
+      additionalContent: '{provide link to Spotify API}',
       technology: [
         {
           name: 'HTML',
@@ -44,7 +59,7 @@ const initialState = {
         },
         {
           name: 'jQuery',
-          logo: '../assets/JQuery_Logo.svg',
+          logo: '../assets/Jquery-Logo.svg',
           altText: 'jQuery Logo'
         }
       ],
@@ -74,6 +89,7 @@ const initialState = {
       ],
       description:
         'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create/fork/modify/share soccer formations and in-game strategy',
+      additionalContent: 'Use username: PasswordIsTaco password: taco',
       technology: [
         // {
         //   name: 'HTML',
@@ -97,7 +113,7 @@ const initialState = {
         },
         {
           name: 'jQuery',
-          logo: '../assets/JQuery_Logo.svg',
+          logo: '../assets/Jquery-Logo.svg',
           altText: 'jQuery Logo'
         },
         {
@@ -152,6 +168,7 @@ const initialState = {
       ],
       description:
         'The application was developed for users who track macronutrients. It allows users to search for food items, based on restaurant, and create a running total of nutritional information.',
+      // additionalContent: '{insert link to Nutritionix API}',
       technology: [
         {
           name: 'HTML',
@@ -191,9 +208,20 @@ const initialState = {
     },
     {
       name: 'Quiz App',
-      image: '../assets/Yarn_Logo.svg',
+      screenshot: [
+        {
+          name: 'screenshot1',
+          image: '../assets/projects/soccer/read-me.png',
+          altText: 'Instructions Page'
+        },
+        {
+          name: 'screenshot1',
+          image: '../assets/projects/soccer/read-me.png',
+          altText: 'Instructions Page'
+        }
+      ],
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin mauris et augue volutpat, in bibendum nisl ultrices. Pellentesque ac nisl eu odio finibus faucibus. In blandit lobortis lacus quis fermentum. ',
+        'The quiz app is a Liverpool FC themed quiz that asks the user five multiple choice questions and ranks their knowledge level based on the results.',
       technology: [
         {
           name: 'HTML',
@@ -212,13 +240,13 @@ const initialState = {
         },
         {
           name: 'jQuery',
-          logo: '../assets/JQuery_Logo.svg',
+          logo: '../assets/Jquery-Logo.svg',
           altText: 'jQuery Logo'
         }
       ],
       links: {
-        github: '',
-        application: '/'
+        github: 'https://github.com/JonSzeto821/quiz-app',
+        application: 'https://jonszeto821.github.io/quiz-app/'
       }
     }
   ],
@@ -229,7 +257,7 @@ const initialState = {
   icons: [
     {
       name: 'musicIcon',
-      image: '../assets/icons/music_icon.svg',
+      image: '../assets/icons/headphone_icon.svg',
       altText: 'Music Icon'
     },
     {
@@ -246,6 +274,11 @@ const initialState = {
       name: 'quizIcon',
       image: '../assets/icons/quiz_icon.svg',
       altText: 'Quiz Icon'
+    },
+    {
+      name: 'contactIcon',
+      image: '../assets/icons/contact_icon.svg',
+      altText: 'Contact Icon'
     }
   ]
 };

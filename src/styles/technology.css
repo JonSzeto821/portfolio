@@ -2,8 +2,10 @@
   display: inline-block;
   /*width: 50px;*/
   width: calc(100% * (1 / 4) - 10px - 1px);
+  padding-top: 7.5px;
   height: 50px;
-  margin: 2.5px;
+  /*margin: 2.5px;*/
+  margin: 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -12,12 +14,42 @@
   }
 }
 
+@media only screen and (min-width: 401px) {
+  .techLogo {
+    width: calc(100% * (1 / 4) - 40px - 1px);
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .techLogo {
+    width: calc(100% * (1 / 4) - 55px - 15px);
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  .techLogo {
+    width: calc(100% * (1 / 4) - 55px - 20px);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .techLogo {
+    width: calc(100% * (1 / 4) - 55px - 30px);
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .techLogo {
+    width: calc(100% * (1 / 4) - 55px - 40px);
+  }
+}
+
 @media only screen and (min-width: 701px) {
   .techLogo {
     /*width: 40px;*/
-    width: calc(100% * (1 / 8) - 20px - 10px);
+    width: calc(100% * (1 / 8) - 5px - 10px);
     height: 40px;
-    border-right: 1px solid #696969;
+    /*border-right: 1px solid #696969;*/
     padding: 0 5px;
     /*margin-right: 50px;*/
   }
@@ -27,6 +59,22 @@
   }
 
   .center {
-    text-align: left;
+  }
+
+  .technology {
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .technology {
+    /*width: 85%;    */
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .technology {
+    width: 85%;
   }
 }

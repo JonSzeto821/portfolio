@@ -8,7 +8,7 @@ import {default as Project4} from '../../components/projectTemplate';
 import Contact from '../../components/contact';
 import '../../styles/carousel.css'
 import aboutIcon from '../../styles/assets/about_icon.svg';
-import musicIcon from '../../styles/assets/music_icon.svg';
+import musicIcon from '../../styles/assets/headphone_icon.svg';
 import soccerIcon from '../../styles/assets/soccer_icon.svg';
 import nutritionIcon from '../../styles/assets/nutrition_icon.svg';
 import quizIcon from '../../styles/assets/quiz_icon.svg';
@@ -28,7 +28,7 @@ export default class Carousel extends Component {
 
   componentDidMount() {
     // console.log('carousel', this.props); 
-    // console.log(this.props.props.icons[0]);
+    // console.log(this.props.props.icons[4]);
     // console.log('ABOUT:', this.props.props.about.location, this.props.props.about.phone);
     this.setState({
       nav1: this.slider1,
@@ -89,6 +89,7 @@ export default class Carousel extends Component {
                 links={this.props.props.about.links}  
                 location={this.props.props.about.location}
                 phone={this.props.props.about.phone}
+                icons={this.props.props.icons[4]}
               />
             </div>
           </Slider>

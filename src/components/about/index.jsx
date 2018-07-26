@@ -19,9 +19,10 @@ const About = props => {
 							<img className="center imgSize" name='name' src={props.props.about.image} alt='altText' />
 						</td>
 					</tr>
-					<tr>
+					<tr className="bio">
 						<td>
-							{props.props.about.bio}
+							<div>{props.props.about.bio.p1}</div><br />
+							<div>{props.props.about.bio.p2}</div>
 						</td>
 					</tr>
 					<tr>
