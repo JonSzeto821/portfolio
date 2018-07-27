@@ -29,7 +29,6 @@ const ProjectTemp = props => {
 
 	return(
 		<div id="projectTempContainer">
-			<ImageSlider />
 
 			<table>
 				<thead>
@@ -66,7 +65,7 @@ const ProjectTemp = props => {
 							{extraContent}
 						</td>
 					</tr>*/}
-					<tr>
+{/*					<tr>
 						<td className="hide-desktop">
 							<img 
 								className={["iconSize"].join(' ')} // remove invert
@@ -75,34 +74,14 @@ const ProjectTemp = props => {
 								alt={icon.altText} 
 							/>
 						</td>
-					</tr>
-					<tr>
-						<td><ImageSlider /></td>
-					</tr>
-					<tr>
-						<td className={["screenshots", "hide-mobile"].join(' ')}>
-							{screenshots}
-{/*							<div className="slideTest">
-								<Slider
-								  dots="true"
-							      fade="true"
-							      infinite="true"
-							      speed="500"
-							      slidesToShow="1"
-							      slidesToScroll="1"
-								>
-									<div><p>Slide 1</p></div>
-									<div><p>Slide 2</p></div>
-									<div><p>Slide 3</p></div>
-								</Slider>
-							</div>*/}
-						</td>
-					</tr>
-					<tr>
-						<td>
-						
-						</td>
-					</tr>
+					</tr>*/}
+					</tbody>
+					</table>
+					<div id="screenshot-carousel">
+						<ImageSlider screenshots={screenshots} />
+					</div>
+					<table>
+					<tbody>
 					<tr>
 						<td>
 							<h3>Technology</h3>

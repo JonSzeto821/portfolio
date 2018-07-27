@@ -161,7 +161,7 @@
   }
 
   .slick-slider {
-    border-bottom: 1px dashed blue;
+    /*border-bottom: 1px dashed blue;*/
     max-height: none;
     min-height: none;
     height: none;

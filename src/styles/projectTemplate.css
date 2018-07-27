@@ -60,9 +60,14 @@
 }
 
 .slideTest {
-  border: 2px dashed blue;
+  /*border: 2px dashed blue;*/
   width: 50%;
   background-color: yellow;
+}
+
+#screenshot-carousel {
+  margin: 30px auto;
+  /*width: 35%;*/
 }
 
 /*    width: 100vw;
@@ -141,6 +146,7 @@
 
   .screenshot-img {
     margin: 5px 5px;
+    height: 300px;
   }
 
   .screenshot-img:first-child {
@@ -148,7 +154,7 @@
   }
 
   .screenshot-img < td {
-    border: 2px dashed blue;
+    /*border: 2px dashed blue;*/
   }
 
   .description {
@@ -162,6 +168,10 @@
 
   .title > img {
     float: left;
+  }
+
+  #screenshot-carousel {
+    width: 55%;
   }
 }
 
