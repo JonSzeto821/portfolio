@@ -40,7 +40,6 @@ const initialState = {
       ],
       description:
         'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify',
-      // additionalContent: '{provide link to Spotify API}',
       technology: [
         {
           name: 'HTML',
@@ -91,11 +90,6 @@ const initialState = {
         'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy',
       additionalContent: 'Demo Username: PasswordIsTaco; Password: taco',
       technology: [
-        // {
-        //   name: 'HTML',
-        //   logo: '../assets/HTML5_Logo.svg',
-        //   altText: 'HTML Logo'
-        // },
         {
           name: 'Handlebars',
           logo: '../assets/Handlebars_Logo.svg',
@@ -136,11 +130,6 @@ const initialState = {
           logo: '../assets/npm_Logo.svg',
           altText: 'NPM Logo'
         }
-        // {
-        //   name: 'mLab',
-        //   logo: '../assets/mLab_Logo.png',
-        //   altText: 'mLab Logo'
-        // }
       ],
       links: {
         github: 'https://github.com/JonSzeto821/thinkful-fullstack-capstone',
@@ -168,7 +157,6 @@ const initialState = {
       ],
       description:
         'The application was developed for users who track macronutrients. It allows users to search for food items, based on restaurant, and create a running total of nutritional information.',
-      // additionalContent: '{insert link to Nutritionix API}',
       technology: [
         {
           name: 'HTML',

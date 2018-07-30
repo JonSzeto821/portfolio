@@ -27,9 +27,6 @@ export default class Carousel extends Component {
   } 
 
   componentDidMount() {
-    // console.log('carousel', this.props); 
-    // console.log(this.props.props.icons[4]);
-    // console.log('ABOUT:', this.props.props.about.location, this.props.props.about.phone);
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
@@ -37,8 +34,6 @@ export default class Carousel extends Component {
   }
 
   afterChangeHandler = currentSlide => {
-    // console.log(currentSlide);
-    // this.props.updateInitialSlide(currentSlide);
     this.setState({
       pageNumber: currentSlide++
     })
@@ -101,8 +96,6 @@ export default class Carousel extends Component {
             focusOnSelect={true}
             arrows={false}
             vertical={true}
-            
-            // verticalSwiping={true}
             responsive={[
               {
                 breakpoint: 701,

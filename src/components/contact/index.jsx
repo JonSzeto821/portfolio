@@ -8,28 +8,20 @@ import '../../styles/contact.css';
 import '../../styles/projectTemplate.css';
 
 const Contact = props => {
-	const email = props.links.contact.email;
-	const linkedin = props.links.linkedin;
-	const github = props.links.github;
-	const location = props.location;
-	const phone = props.phone;
-	const icon = props.icons;
+	const [email, linkedin, github, location, phone, icon] = [props.links.contact.email, props.links.linkedin, props.links.github, props.location, props.phone, props.icons];
 
 	return(
 		<div id="contactContainer">
 			<div id="contact-head">
 				<h2>Contact</h2>
 				<img 
-					className={["iconSize", "hide-mobile", "contact-icon"].join(' ')} // remove invert
+					className={["iconSize", "hide-mobile", "contact-icon"].join(' ')}
 					name='name' 
 					src={icon.image} 
 					alt={icon.altText} 
 				/>
 			</div>
 			<div id="contactContent">
-				{/*<ul className="contact-description">
-									<li>Please feel free to contact!</li>
-								</ul>*/}
 				<ul className="social-media">
 			        <li>
 						<a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>

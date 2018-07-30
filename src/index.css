@@ -35,7 +35,6 @@ button:disabled {
 
 @media only screen and (min-width: 701px) {
   body {
-    /*background-color: #C1C1C1;*/
     background-color: #dfdfdf;
   }
 }
