@@ -16,7 +16,7 @@ const initialState = {
       }
     },
     phone: '(617) 429-3618',
-    location: 'Raleigh, NC'
+    location: 'Raleigh/Durham, NC'
   },
   project: [
     {
