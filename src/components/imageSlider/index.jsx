@@ -11,7 +11,9 @@ export default class ImageSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 4000
       // vertical: true,
       // verticalSwiping:true,
     };

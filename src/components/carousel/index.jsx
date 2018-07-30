@@ -101,6 +101,7 @@ export default class Carousel extends Component {
             focusOnSelect={true}
             arrows={false}
             vertical={true}
+            
             // verticalSwiping={true}
             responsive={[
               {
