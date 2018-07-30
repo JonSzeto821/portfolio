@@ -83,6 +83,14 @@ const ProjectTemp = props => {
 					<table>
 					<tbody>
 					<tr>
+						<td className="buttons">
+							<Links 
+								application={application}
+								github={github}
+							/>
+						</td>
+					</tr>
+					<tr>
 						<td>
 							<h3>Technology</h3>
 						</td>
@@ -92,14 +100,7 @@ const ProjectTemp = props => {
 							<Technology technology={technology} />
 						</td>
 					</tr>
-					<tr>
-						<td className="buttons">
-							<Links 
-								application={application}
-								github={github}
-							/>
-						</td>
-					</tr>
+
 				</tbody>
 			</table>		
 		</div>
