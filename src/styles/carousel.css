@@ -96,9 +96,9 @@
     height: 50%;
   }
 
-  .content-container {
+  /*.content-container {
     overflow-y: scroll;
-  }
+  }*/
 
   .carouselBottom h3 {
     margin: 0 2.5px;
