@@ -45,8 +45,7 @@
 }
 
 .carouselBottom img {
-  margin: 10px auto;
-  margin-bottom: 0;
+  margin: calc(100vh / 50) auto 0;
 }
 
 .carouselBottom div:hover {
