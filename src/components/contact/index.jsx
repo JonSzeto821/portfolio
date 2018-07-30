@@ -17,200 +17,46 @@ const Contact = props => {
 
 	return(
 		<div id="contactContainer">
-			{/*<table id="container">
-							<thead>
-								<tr>
-									<td>
-										<h2>
-											Contacts
-										</h2>
-										<img 
-											className={["iconSize", "hide-mobile", "float-left"].join(' ')} // remove invert
-											name={icon.name} 
-											src={icon.image} 
-											alt={icon.altText} 
-										/>
-									</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr className="links-container">
-									<td>
-										<table>
-											<tbody>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr id="contact-gh">
-																	<td>
-																		<a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-																		<a href={github} target="_blank" className={["link", "mobile"].join(' ')}>GitHub</a>
-																	</td>
-																	<td>
-																		<a href={github} target="_blank" className="link" className={["link"].join(' ')}>GitHub</a>
-																	</td>
-																</tr>
-															</tbody>
-														</table>	
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr id="contact-li">
-																	<td>
-																		<a href={linkedin} target="_blank"><img className="logoSize" id="LIIcon" src={LIIcon} alt="LinkedIn Icon" /></a>
-																	</td>
-																	<td>
-																		<a href={linkedin} target="_blank" className="link">LinkedIn</a>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr id="contact-email">
-																	<td>
-																		<img className="logoSize" id="EmailIcon" src={EmailIcon} alt="Email Icon" />
-																	</td>
-																	<td>
-																		<a href={email} className="link">Email</a>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-								<tr className="location-phone-container">
-									<td>
-										<table>
-											<tbody>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr id="contact-phone">
-																	<td>
-																		<img className="logoSize" id="PhoneIcon" src={PhoneIcon} alt="Phone Icon" />
-																	</td>
-																	<td>
-																		{phone} 
-																	</td>
-																</tr>
-															</tbody>
-														</table>	
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr id="contact-location">
-																	<td>
-																		<img className="logoSize" id="LocationIcon" src={LocationIcon} alt="Location Icon" />
-																	</td>
-																	<td>
-																		{location} 
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>*/}
-			<ul>
-		        <li>
-		          <a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={github} target="_blank" className="link">GitHub</a>
-		        </li>
-		        <li>
-		          <a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={github} target="_blank" className="link">GitHub</a>
-		        </li>
-		        <li>
-		          <a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={github} target="_blank" className="link">GitHub</a>
-		        </li>
-	      </ul>
-	      <ul>
-		        <li>
-		          <a href={linkedin} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={linkedin} target="_blank" className="link">linkedin</a>
-		        </li>
-		        <li>
-		          <a href={linkedin} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={linkedin} target="_blank" className="link">linkedin</a>
-		        </li>
-		        <li>
-		          <a href={linkedin} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
-		          <a href={linkedin} target="_blank" className="link">linkedin</a>
-		        </li>
-		      </ul>
+			<div id="contact-head">
+				<h2>Contact</h2>
+				<img 
+					className={["iconSize", "hide-mobile", "contact-icon"].join(' ')} // remove invert
+					name='name' 
+					src={icon.image} 
+					alt={icon.altText} 
+				/>
+			</div>
+			<div id="contactContent">
+				{/*<ul className="contact-description">
+									<li>Please feel free to contact!</li>
+								</ul>*/}
+				<ul className="social-media">
+			        <li>
+						<a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a>
+						<a href={github} target="_blank" className="link">GitHub</a>
+			        </li>
+			        <li>
+						<a href={linkedin} target="_blank"><img className="logoSize" id="LIIcon" src={LIIcon} alt="LinkedIn Icon" /></a>
+						<a href={linkedin} target="_blank" className="link">LinkedIn</a>
+					</li>
+					<li>
+						<a href={email} className="link"><img className="logoSize" id="EmailIcon" src={EmailIcon} alt="Email Icon" /></a>
+						<a href={email} className="link">Email</a>
+					</li>
+				</ul>
+				<ul className="location-phone">
+				    <li>
+						<img className="logoSize" id="LocationIcon" src={LocationIcon} alt="Location Icon" />
+						<div className="inline-mobile">{location}</div>
+					</li>
+					<li>
+				   		<img className="logoSize" id="LocationIcon" src={PhoneIcon} alt="Location Icon" />
+				    	<div className="inline-mobile">{phone}</div>
+				    </li>
+				</ul>
+			</div>
 		</div>
 	);
 };
 
 export default Contact;
-
-
-
-
-
-{/*<table>
-							<tbody>
-								<tr>
-									<td colSpan="2">
-										<h2>Contacts</h2>
-										<img 
-											className={["iconSize", "hide-mobile"].join(' ')} // remove invert
-											name={icon.name} 
-											src={icon.image} 
-											alt={icon.altText} 
-										/>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<table>
-							<tbody>
-								<tr className="borderStyle">
-									<td><a href={github} target="_blank"><img className="logoSize" id="GHIcon" src={GHIcon} alt="GitHub Icon" /></a></td>
-									<td><a href={github} target="_blank" className="link">GitHub</a></td>
-								</tr>
-								<tr className="borderStyle">
-									<td><a href={linkedin} target="_blank"><img className="logoSize" id="LIIcon" src={LIIcon} alt="LinkedIn Icon" /></a></td> 
-									<td><a href={linkedin} target="_blank" className="link">LinkedIn</a></td>
-								</tr>
-								<tr className="borderStyle">
-									<td><img className="logoSize" id="EmailIcon" src={EmailIcon} alt="Email Icon" /></td>
-									<td><a href={email} className="link">Email</a></td>
-								</tr>
-							</tbody>
-						</table>
-						<table>
-							<tbody>
-								<tr className="borderStyle">
-									<td><img className="logoSize" id="LocationIcon" src={LocationIcon} alt="Location Icon" /></td>
-									<td>{location}</td>
-								</tr>
-								<tr className="borderStyle">
-									<td></td>
-									<td>{phone}</td>
-								</tr>
-							</tbody>
-						</table>*/}

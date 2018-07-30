@@ -2,7 +2,7 @@ import React from 'react';
 import Technology from '../technology';
 import Links from '../projectLinks';
 import '../../styles/projectTemplate.css';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import ImageSlider from '../imageSlider';
 
 

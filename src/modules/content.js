@@ -23,18 +23,18 @@ const initialState = {
       name: 'Spotify Global',
       screenshot: [
         {
-          name: 'screenshot1',
-          image: '../assets/projects/spotify/spotify-mediumVP.png',
+          name: 'Desktop Viewport',
+          image: '../assets/projects/spotify/spotify-desktop.png',
+          altText: 'Desktop Viewport'
+        },
+        {
+          name: 'Medium Viewport',
+          image: '../assets/projects/spotify/spotify-medium.png',
           altText: 'Spotify App Image'
         },
         {
-          name: 'screenshot1',
-          image: '../assets/projects/spotify/spotify-mediumVP.png',
-          altText: 'Spotify App Image'
-        },
-        {
-          name: 'screenshot1',
-          image: '../assets/projects/spotify/spotify-mediumVP.png',
+          name: 'Mobile Viewport',
+          image: '../assets/projects/spotify/spotify-mobile.png',
           altText: 'Spotify App Image'
         }
       ],
@@ -210,14 +210,19 @@ const initialState = {
       name: 'Quiz App',
       screenshot: [
         {
-          name: 'screenshot1',
-          image: '../assets/projects/soccer/read-me.png',
-          altText: 'Instructions Page'
+          name: 'quizStart',
+          image: '../assets/projects/quiz/quiz-start.png',
+          altText: 'Start Quiz'
         },
         {
-          name: 'screenshot1',
-          image: '../assets/projects/soccer/read-me.png',
-          altText: 'Instructions Page'
+          name: 'quizQuestion',
+          image: '../assets/projects/quiz/quiz-question.png',
+          altText: 'Quiz Question'
+        },
+        {
+          name: 'quizResult',
+          image: '../assets/projects/quiz/quiz-result.png',
+          altText: 'Quiz Result'
         }
       ],
       description:

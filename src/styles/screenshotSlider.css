@@ -1,5 +1,5 @@
 .screenshot-slider {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
@@ -10,4 +10,22 @@
 .slick-next:before,
 .slick-prev:before {
   color: #696969;
+}
+
+@media only screen and (min-width: 401px) {
+  .screenshot-slider {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .screenshot-slider {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .screenshot-slider {
+    width: 85%;
+  }
 }

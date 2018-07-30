@@ -55,7 +55,6 @@ export default class Carousel extends Component {
             mobileFirst={true}
             className="carouselTop content-col"
             afterChange={this.afterChangeHandler}
-            autoFocus
           >
             <div className="content-container">
               <About props={this.props.props} />
