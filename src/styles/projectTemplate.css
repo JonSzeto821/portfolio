@@ -70,6 +70,15 @@
   /*width: 35%;*/
 }
 
+.description {
+  text-align: justify;
+  padding: 0 15px;
+}
+
+.bottom-table {
+  transform: scale(0.8);
+}
+
 /*    width: 100vw;
     display: inline-block;
     text-align: center;

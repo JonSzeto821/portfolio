@@ -101,20 +101,14 @@ export default class Carousel extends Component {
             focusOnSelect={true}
             arrows={false}
             vertical={true}
-            verticalSwiping={true}
+            // verticalSwiping={true}
             responsive={[
               {
                 breakpoint: 701,
                 settings: {
                   slidesToShow: 1,
                 }
-              },
-              // {
-              //   breakpoint: 351,
-              //   settings: {
-              //     slidesToShow: 1,
-              //   }
-              // }
+              }
             ]}
             className="carouselBottom nav-col"
             id='carouselBottomHeight'

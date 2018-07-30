@@ -82,7 +82,7 @@ const ProjectTemp = props => {
 					</div>
 					<table>
 					<tbody>
-					<tr>
+					<tr className="bottom-table">
 						<td className="buttons">
 							<Links 
 								application={application}
@@ -90,11 +90,11 @@ const ProjectTemp = props => {
 							/>
 						</td>
 					</tr>
-					<tr>
+{/*					<tr>
 						<td>
 							<h3>Technology</h3>
 						</td>
-					</tr>
+					</tr>*/}
 					<tr>
 						<td>
 							<Technology technology={technology} />
