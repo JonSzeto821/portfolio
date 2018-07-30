@@ -9,15 +9,11 @@
 
 #projectTempContainer table {
   padding: 0px;
-  /*margin: 0px;*/
 }
 
 #projectTempContainer .buttons {
   width: 100%;
 }
-/*#projectTempContainer img {
-	margin: 5px auto;
-}*/
 
 #projectTempContainer h2 {
   font-size: 36px;
@@ -48,27 +44,22 @@
 .screenshot-img {
   height: 200px;
   border-radius: 3px;
-  /*border: 1px solid #f2f2f2;*/
   margin: 5px 2.5px;
 }
 
 .screenshots {
   text-align: center;
   margin: 0;
-  /*width: calc(100% * (1 / 3) - 10px - 1px);*/
   width: 100%;
 }
 
 .slideTest {
-  /*border: 2px dashed blue;*/
   width: 50%;
   background-color: yellow;
 }
 
 #screenshot-carousel {
-  /*margin: 30px auto;*/
   margin: 10px auto 30px;
-  /*width: 35%;*/
 }
 
 .description {
@@ -81,14 +72,12 @@
 }
 
 .extraContent {
-  /*padding-top: 5px;*/
   font-style: italic;
   font-size: 12px;
 }
 
 @media only screen and (max-width: 400px) {
   .hide-mobile {
-    /*border: 2px dashed blue;*/
     display: none;
   }
 
@@ -99,14 +88,12 @@
 
 @media only screen and (min-width: 401px) {
   #projectTempContainer {
-    /*min-height: 560px; make final tweaks once all content is in*/
     min-height: 100vh;
   }
 
   .iconSize {
     width: 60px;
     height: 63px;
-    /*margin-top: 10px;*/
   }
 
   .extraContent {
@@ -137,19 +124,16 @@
 
   #projectTempContainer h2 {
     font-size: 42px;
-    /*color: #696969;*/
   }
 
   #projectTempContainer > table {
     text-align: left;
-    /*margin-left: 100px;*/
     margin-left: 50px;
     margin-right: 50px;
     padding: 0;
   }
 
   #projectTempContainer h3 {
-    /*color: #696969;*/
     font-size: 24px;
     margin: 0;
   }
@@ -158,13 +142,7 @@
     margin-top: 10px;
   }
 
-  /*.iconSize {
-    width: 50px;
-    height: 50px;
-  }*/
-
   .extraContent {
-    /*padding-top: 15px;*/
     font-size: 16px;
   }
 
@@ -180,10 +158,6 @@
 
   .screenshot-img:first-child {
     margin-left: 0;
-  }
-
-  .screenshot-img < td {
-    /*border: 2px dashed blue;*/
   }
 
   .description {

@@ -19,12 +19,8 @@
 }
 
 #contactContent ul {
-  /*display: inline-block;*/
   margin: 0;
-  margin-left: 0;
-  /*width: 40%;*/
   list-style-type: none;
-  /*vertical-align: top;*/
   padding: 0;
   text-align: left;
 }
@@ -62,26 +58,11 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
-  #contactContent ul {
-    margin-left: 15px;
-  }
-
-  #contactContent li {
-    line-height: 2.7;
-    font-size: 20px;
-  }
-}
-
 @media only screen and (min-width: 451px) {
   #contactContent ul {
     display: inline-block;
-    margin: 0;
-    margin-left: 0;
     width: 40%;
-    list-style-type: none;
     vertical-align: top;
-    padding: 0;
   }
 
   #contactContent li {
@@ -98,10 +79,7 @@
 @media only screen and (min-width: 701px) {
   #contactContainer {
     min-height: 100vh;
-    padding: 0 50px 10px 50px;
-    /*margin-left: 50px;
-    margin-right: 50px;*/
-    /*padding: 0;*/
+    padding: 0 50px;
   }
 
   #contactContainer h2 {
@@ -121,5 +99,16 @@
   #contactContent {
     text-align: start;
     clear: both;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #contactContent ul {
+    margin-left: 15px;
+  }
+
+  #contactContent li {
+    line-height: 2.7;
+    font-size: 20px;
   }
 }
