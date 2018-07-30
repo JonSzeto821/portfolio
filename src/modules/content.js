@@ -40,7 +40,7 @@ const initialState = {
       ],
       description:
         'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify',
-      additionalContent: '{provide link to Spotify API}',
+      // additionalContent: '{provide link to Spotify API}',
       technology: [
         {
           name: 'HTML',
@@ -88,8 +88,8 @@ const initialState = {
         }
       ],
       description:
-        'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create/fork/modify/share soccer formations and in-game strategy',
-      additionalContent: 'Use username: PasswordIsTaco password: taco',
+        'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy',
+      additionalContent: 'Demo Username: PasswordIsTaco; Password: taco',
       technology: [
         // {
         //   name: 'HTML',

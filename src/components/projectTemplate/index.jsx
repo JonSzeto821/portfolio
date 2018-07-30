@@ -11,7 +11,7 @@ const ProjectTemp = props => {
 	const image = props.project.screenshot || [];
 	const [name, description, icon] = [props.project.name, props.project.description, props.icons]
 	// console.log(props.project.additionalContent);
-	// const extraContent = props.project.additionalContent || '';
+	const extraContent = props.project.additionalContent || '';
 	// console.log(extraContent);
 	const [technology, application, github] = [props.project.technology, props.project.links.application, props.project.links.github];
 	
@@ -60,11 +60,7 @@ const ProjectTemp = props => {
 							{description}
 						</td>
 					</tr>
-{/*					<tr>
-						<td className="extraContent">
-							{extraContent}
-						</td>
-					</tr>*/}
+
 {/*					<tr>
 						<td className="hide-desktop">
 							<img 
@@ -82,6 +78,11 @@ const ProjectTemp = props => {
 					</div>
 					<table>
 					<tbody>
+										<tr>
+						<td className="extraContent">
+							{extraContent}
+						</td>
+					</tr>
 					<tr className="bottom-table">
 						<td className="buttons">
 							<Links 
