@@ -1,16 +1,3 @@
-#aboutContainer table h1 {
-  margin: 0;
-  padding: 0;
-}
-
-#aboutContainer {
-  padding: 0 5px 10px 5px;
-  background-color: #f2f2f2;
-  text-align: center;
-  min-height: 70vh;
-  color: #696969;
-}
-
 .center {
   margin: auto;
 }
@@ -34,29 +21,29 @@
 
 .bio td {
   text-align: justify;
-  padding: 15px 15px 0 15px;
+  padding: 15px;
+}
+
+#aboutContainer {
+  padding: 0 5px 10px 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+  min-height: 70vh;
+  color: #696969;
+}
+
+#aboutContainer table h1 {
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 401px) {
   table h1 {
     font-size: 42px;
   }
-
-  #aboutContainer {
-    min-height: 70vh;
-  }
 }
 
 @media only screen and (min-width: 701px) {
-  #aboutContainer {
-    min-height: 100vh;
-  }
-
-  #aboutContainer table {
-    margin-left: 15px;
-    margin-right: 5px;
-  }
-
   .bio {
     text-align: left;
   }
@@ -64,5 +51,14 @@
   .swipe {
     width: 150px;
     height: 150px;
+  }
+
+  #aboutContainer {
+    min-height: 100vh;
+  }
+
+  #aboutContainer table {
+    margin-left: 15px;
+    margin-right: 5px;
   }
 }

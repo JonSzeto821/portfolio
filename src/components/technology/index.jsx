@@ -3,8 +3,7 @@ import '../../styles/technology.css';
 
 const Technology = props => {
 	const techLogo = {
-		display: 'inline-block',
-		margin: '0 5px 0 0'
+		display: 'inline-block'
 	}
 
 	const techList = props.technology;
@@ -17,7 +16,7 @@ const Technology = props => {
 	});
 	
 	return(
-		<div className="center technology">
+		<div className="technology">
 			{techItem}
 		</div>
 	);

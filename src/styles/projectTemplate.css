@@ -1,30 +1,3 @@
-#projectTempContainer {
-  padding: 0 5px 5px 5px;
-  background-color: #f2f2f2;
-  text-align: center;
-  min-height: 70vh;
-  color: #696969;
-  width: 100%;
-}
-
-#projectTempContainer table {
-  padding: 0px;
-}
-
-#projectTempContainer .buttons {
-  width: 100%;
-}
-
-#projectTempContainer h2 {
-  font-size: 36px;
-  margin: 0;
-}
-
-#projectTempContainer h3 {
-  font-size: 24px;
-  margin: 0;
-}
-
 .iconSize {
   width: 150px;
   height: 150px;
@@ -58,10 +31,6 @@
   background-color: yellow;
 }
 
-#screenshot-carousel {
-  margin: 10px auto 30px;
-}
-
 .description {
   text-align: justify;
   padding: 0 15px;
@@ -76,6 +45,37 @@
   font-size: 12px;
 }
 
+#projectTempContainer {
+  padding: 0 5px 5px 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+  min-height: 70vh;
+  color: #696969;
+  width: 100%;
+}
+
+#screenshot-carousel {
+  margin: 10px auto 30px;
+}
+
+#projectTempContainer h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+#projectTempContainer h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#projectTempContainer table {
+  padding: 0px;
+}
+
+#projectTempContainer .buttons {
+  width: 100%;
+}
+
 @media only screen and (max-width: 400px) {
   .hide-mobile {
     display: none;
@@ -87,10 +87,6 @@
 }
 
 @media only screen and (min-width: 401px) {
-  #projectTempContainer {
-    min-height: 100vh;
-  }
-
   .iconSize {
     width: 60px;
     height: 63px;
@@ -108,6 +104,10 @@
   .screenshot-img {
     height: 300px;
   }
+
+  #projectTempContainer {
+    min-height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 501px) {
@@ -117,27 +117,6 @@
 }
 
 @media only screen and (min-width: 701px) {
-  #projectTempContainer {
-    min-height: 100vh;
-    padding: 0 5px 10px 5px;
-  }
-
-  #projectTempContainer h2 {
-    font-size: 42px;
-  }
-
-  #projectTempContainer > table {
-    text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0;
-  }
-
-  #projectTempContainer h3 {
-    font-size: 24px;
-    margin: 0;
-  }
-
   .iconSize {
     margin-top: 10px;
   }
@@ -156,10 +135,6 @@
     height: 300px;
   }
 
-  .screenshot-img:first-child {
-    margin-left: 0;
-  }
-
   .description {
     text-align: justify;
     padding: 0;
@@ -167,6 +142,10 @@
 
   .title {
     padding: 0;
+  }
+
+  .screenshot-img:first-child {
+    margin-left: 0;
   }
 
   .title h2 {
@@ -178,19 +157,27 @@
     float: left;
   }
 
+  #projectTempContainer {
+    min-height: 100vh;
+    padding: 0 5px 10px 5px;
+  }
+
   #screenshot-carousel {
     width: 55%;
   }
-}
 
-@media only screen and (min-width: 901px) {
-  .screenshot-img {
-    height: 275px;
+  #projectTempContainer h2 {
+    font-size: 42px;
   }
-}
 
-@media only screen and (min-width: 901px) {
-  .screenshot-img {
-    height: 300px;
+  #projectTempContainer h3 {
+    font-size: 24px;
+  }
+
+  #projectTempContainer > table {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
   }
 }

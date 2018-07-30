@@ -40,16 +40,36 @@ export default class Carousel extends Component {
   } 
 
   render() {
+    const carousel1 = {
+      asNavFor: this.state.nav2,
+      ref: slider => (this.slider1 = slider),
+      arrows: false,
+      mobileFirst: true,
+      afterChange: this.afterChangeHandler
+    }
+
+    const carousel2 = {
+      asNavFor: this.state.nav1,
+      ref: slider => (this.slider2 = slider),
+      slidesToShow: 4,
+      swipeToSlide: true,
+      focusOnSelect: true,
+      arrows: false,
+      vertical: true,
+      responsive: [{
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+    }
+
     return (
       <div id="carousel-container">
           <div id="pageNumber">{this.state.pageNumber + 1}|6</div>
           <Slider
-            asNavFor={this.state.nav2}
-            ref={slider => (this.slider1 = slider)}
-            arrows={false}
-            mobileFirst={true}
+            {...carousel1}
             className="carouselTop content-col"
-            afterChange={this.afterChangeHandler}
           >
             <div className="content-container">
               <About props={this.props.props} />
@@ -87,25 +107,10 @@ export default class Carousel extends Component {
               />
             </div>
           </Slider>
-          
           <Slider
-            asNavFor={this.state.nav1}
-            ref={slider => (this.slider2 = slider)}
-            slidesToShow={4}
-            swipeToSlide={true}
-            focusOnSelect={true}
-            arrows={false}
-            vertical={true}
-            responsive={[
-              {
-                breakpoint: 701,
-                settings: {
-                  slidesToShow: 1,
-                }
-              }
-            ]}
-            className="carouselBottom nav-col"
+            {...carousel2}
             id='carouselBottomHeight'
+            className="carouselBottom nav-col"
           >
             <div className="green">
               <h3 className="hide">ABOUT ME</h3>

@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300');
 
+.carouselBottom {
+  position: fixed;
+  top: calc(100vh - 80px);
+}
+
+.picSize {
+  width: 60px;
+  height: 60px;
+}
+
+/*Colors*/
 .green {
   background-color: rgb(16, 172, 132);
 }
@@ -29,19 +40,8 @@
   margin: 0 auto;
 }
 
-#carousel-container,
-.carouselBottom,
-.carouselTop {
-  margin: 0;
-}
-
-.carouselBottom {
-  position: fixed;
-  top: calc(100vh - 80px);
-}
-
 .carouselBottom div {
-  height: 60px;
+  height: 80px;
 }
 
 .carouselBottom img {
@@ -53,18 +53,9 @@
   cursor: pointer;
 }
 
-.picSize {
-  width: 60px;
-  height: 60px;
-}
-
 .slick-vertical .slick-slide {
   border: none;
   background-color: #f2f2f2;
-}
-
-.carouselBottom div {
-  height: 80px;
 }
 
 /*current card text*/
@@ -85,18 +76,19 @@
   filter: invert(0.92);
 }
 
+#carousel-container,
+.carouselBottom,
+.carouselTop {
+  margin: 0;
+}
+
 #carousel-container #pageNumber {
   font-family: 'Roboto Slab', serif;
+  background-color: #f2f2f2;
   font-weight: 300;
   text-align: center;
   width: 100vw;
   color: #a4a4a4;
-}
-
-@media only screen and (max-width: 700px) {
-  .hide {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 351px) {
@@ -104,17 +96,13 @@
     height: 50%;
   }
 
-  .carouselBottom h3 {
-    margin: 0 2.5px;
-    font-size: 22px;
-  }
-
   .content-container {
     overflow-y: scroll;
   }
 
-  .nav-col {
-    border-top: none;
+  .carouselBottom h3 {
+    margin: 0 2.5px;
+    font-size: 22px;
   }
 }
 
@@ -125,23 +113,19 @@
     margin: 0;
   }
 
-  #carousel-container {
-    direction: rtl;
-    margin: auto;
+  .carouselBottom {
+    top: 0;
   }
 
-  #carousel-container #pageNumber {
-    background-color: #f2f2f2;
-    direction: ltr;
-    text-align: center;
-    font-weight: 100;
-    width: 75%;
+  .picSize {
+    width: 100px;
+    height: 100px;
   }
 
   .slick-slider {
     max-height: none;
-    min-height: none;
-    height: none;
+    /*min-height: none;
+    height: none;*/
   }
 
   .content-col {
@@ -153,21 +137,28 @@
     width: 25%;
   }
 
-  .carouselBottom h3 {
-    margin-top: 10px;
-  }
-
-  .carouselBottom {
-    border-top: none;
-    top: 0;
-  }
-
   .carouselBottom div {
     height: 25vh;
   }
 
-  .picSize {
-    width: 100px;
-    height: 100px;
+  .carouselBottom h3 {
+    margin-top: 10px;
+  }
+
+  #carousel-container {
+    direction: rtl;
+  }
+
+  #carousel-container #pageNumber {
+    direction: ltr;
+    text-align: center;
+    font-weight: 100;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hide {
+    display: none;
   }
 }

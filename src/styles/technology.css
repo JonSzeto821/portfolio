@@ -1,15 +1,13 @@
 .techLogo {
   display: inline-block;
-  width: calc(100% * (1 / 4) - 10px - 1px);
+  width: calc(100% * (1 / 4) - 20px - 10px);
   padding-top: 7.5px;
   height: 50px;
-  margin: 0;
+  margin: 0 5px 0 0;
 }
 
-@media only screen and (max-width: 700px) {
-  .center {
-    text-align: center;
-  }
+.technology {
+  text-align: center;
 }
 
 @media only screen and (min-width: 401px) {
@@ -24,38 +22,28 @@
   }
 }
 
-@media only screen and (min-width: 551px) {
-  .techLogo {
-    width: calc(100% * (1 / 4) - 55px - 20px);
-  }
-}
-
 @media only screen and (min-width: 601px) {
   .techLogo {
     width: calc(100% * (1 / 4) - 55px - 30px);
   }
 }
 
-@media only screen and (min-width: 651px) {
-  .techLogo {
-    width: calc(100% * (1 / 4) - 55px - 40px);
-  }
-}
-
 @media only screen and (min-width: 701px) {
   .techLogo {
     width: calc(100% * (1 / 9));
+    min-width: calc(100% * (1 / 9) - 30px);
     height: 40px;
     padding: 0;
   }
 
   .technology {
     margin-left: 0;
+    text-align: left;
   }
 }
 
 @media only screen and (min-width: 901px) {
-  .technology {
-    width: 85%;
+  .techLogo {
+    min-width: calc(100% * (1 / 9) - 15px);
   }
 }

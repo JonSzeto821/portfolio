@@ -1,68 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
 
-.spacing {
-  text-align: center;
-}
-
 .borderStyle {
-  margin: auto;
-  border: none;
-}
-
-#github {
-  border-radius: 3px;
-  position: relative;
-  vertical-align: top;
-  width: 100%;
-  height: 50px;
-  padding: 0 5px;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  border: 0;
-  border-bottom: 2px solid #2475ab;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2475ab;
-  box-shadow: inset 0 -2px #2475ab;
-  border: 1px solid black;
-  filter: invert(1);
-  background-color: #f2f2f2;
-}
-
-#github:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 0;
-  text-align: center;
-  min-width: 140px;
-  margin: 0 7px;
-}
-
-.container > .launch:hover {
-  filter: invert(0.2);
-}
-
-.container > .github {
-  filter: invert(1);
-}
-
-.container > .github:hover {
-  filter: invert(0.8);
-}
-
-.container a {
-  line-height: 1.4;
-  padding: 0.25em;
-  text-decoration: none;
   margin: auto;
 }
 
@@ -87,6 +25,27 @@
 
 .btn-2 {
   letter-spacing: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  text-align: center;
+  min-width: 140px;
+  margin: 0 7px;
+}
+
+.spacing {
+  text-align: center;
+}
+
+.container a {
+  line-height: 1.4;
+  padding: 0.25em;
+  text-decoration: none;
+  margin: auto;
 }
 
 .btn-2:hover,
@@ -119,4 +78,44 @@
   bottom: auto;
   top: 0;
   width: 70%;
+}
+
+.container > .launch:hover {
+  filter: invert(0.2);
+}
+
+.container > .github {
+  filter: invert(1);
+}
+
+.container > .github:hover {
+  filter: invert(0.8);
+}
+
+#github {
+  border-radius: 3px;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 50px;
+  padding: 0 5px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-bottom: 2px solid #2475ab;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2475ab;
+  box-shadow: inset 0 -2px #2475ab;
+  border: 1px solid black;
+  filter: invert(1);
+  background-color: #f2f2f2;
+}
+
+#github:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

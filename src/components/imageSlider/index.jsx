@@ -14,6 +14,7 @@ export default class ImageSlider extends Component {
       autoplay: true,
       autoplaySpeed: 4000
     };
+    
     return (
       <div className="screenshot-slider">
         <Slider {...settings}>
