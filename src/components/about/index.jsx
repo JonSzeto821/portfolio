@@ -1,5 +1,6 @@
 import React from 'react';
 import swipeIcon from '../../styles/assets/swipe_icon.svg';
+import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
 import '../../styles/about.css';
 
 const About = props => {
@@ -26,8 +27,10 @@ const About = props => {
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<img className="center swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
+						<td id="page-interaction">
+							<img className="swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
+							or
+							<img className="swipe" name='arrowkeys' src={arrowkeysIcon} alt='arrowkeysIcon' />
 						</td>
 					</tr>
 				</tbody>

@@ -15,6 +15,7 @@
 }
 
 .swipe {
+  display: inline-block;
   width: 15%;
   filter: invert(0.65);
 }
@@ -25,11 +26,20 @@
 }
 
 #aboutContainer {
-  padding: 0 5px 10px 5px;
+  padding: 0 5px 5px 5px;
   background-color: #f2f2f2;
   text-align: center;
   min-height: 70vh;
   color: #696969;
+  width: 100%;
+}
+
+#page-interaction img {
+  display: inline-block;
+}
+
+#page-interaction img:nth-child(2) {
+  margin-left: 10px;
 }
 
 #aboutContainer table h1 {
@@ -60,5 +70,9 @@
   #aboutContainer table {
     margin-left: 15px;
     margin-right: 5px;
+  }
+
+  #page-interaction img:nth-child(2) {
+    margin-left: 20px;
   }
 }
