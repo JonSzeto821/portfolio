@@ -2,8 +2,12 @@ import React from 'react';
 import swipeIcon from '../../styles/assets/swipe_icon.svg';
 import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
 import '../../styles/about.css';
-
+import ReactGA from 'react-ga';
+ 
 const About = props => {
+	ReactGA.initialize('UA-122935699-1');
+    ReactGA.ga('send', 'pageview', '/about');
+
 	return(
 		<div id="aboutContainer">
 			<table>

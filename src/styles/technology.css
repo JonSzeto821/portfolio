@@ -1,8 +1,8 @@
 .techLogo {
   display: inline-block;
+  height: 50px;
   width: calc(100% * (1 / 4) - 20px - 10px);
   padding-top: 7.5px;
-  height: 50px;
   margin: 0 5px 0 0;
 }
 
@@ -30,15 +30,15 @@
 
 @media only screen and (min-width: 701px) {
   .techLogo {
+    height: 40px;
     width: calc(100% * (1 / 9));
     min-width: calc(100% * (1 / 9) - 30px);
-    height: 40px;
     padding: 0;
   }
 
   .technology {
-    margin-left: 0;
     text-align: left;
+    margin-left: 0;
   }
 }
 

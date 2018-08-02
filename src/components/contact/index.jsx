@@ -6,9 +6,14 @@ import LocationIcon from '../../styles/assets/location_icon.svg';
 import PhoneIcon from '../../styles/assets/phone_icon.svg';
 import '../../styles/contact.css';
 import '../../styles/projectTemplate.css';
+import ReactGA from 'react-ga';
 
 const Contact = props => {
 	const [email, linkedin, github, location, phone, icon] = [props.links.contact.email, props.links.linkedin, props.links.github, props.location, props.phone, props.icons];
+
+    ReactGA.initialize('UA-122935699-1');
+    ReactGA.ga('send', 'pageview', '/contact');
+    // ReactGA.pageview(window.location.pathname + window.location.search);
 
 	return(
 		<div id="contactContainer">

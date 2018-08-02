@@ -3,6 +3,7 @@ import Technology from '../technology';
 import Links from '../projectLinks';
 import '../../styles/projectTemplate.css';
 import ImageSlider from '../imageSlider';
+import ReactGA from 'react-ga';
 
 
 const ProjectTemp = props => {

@@ -13,7 +13,7 @@ import soccerIcon from '../../styles/assets/soccer_icon.svg';
 import nutritionIcon from '../../styles/assets/nutrition_icon.svg';
 import quizIcon from '../../styles/assets/quiz_icon.svg';
 import contactIcon from '../../styles/assets/contact_icon.svg';
-
+import ReactGA from 'react-ga';
 
 export default class Carousel extends Component {
 
@@ -34,6 +34,7 @@ export default class Carousel extends Component {
   }
 
   afterChangeHandler = currentSlide => {
+    console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
     this.setState({
       pageNumber: currentSlide++
     })
@@ -63,6 +64,10 @@ export default class Carousel extends Component {
           }
         }]
     }
+
+    ReactGA.initialize('UA-122935699-1');
+    ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
       <div id="carousel-container">
