@@ -18,6 +18,7 @@ import ReactGA from 'react-ga';
 export default class Carousel extends Component {
 
   constructor(props) {
+    console.log(props);
     super(props);
     this.state = {
       nav1: null,
@@ -34,11 +35,24 @@ export default class Carousel extends Component {
   }
 
   afterChangeHandler = currentSlide => {
-    console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
-    this.setState({
-      pageNumber: currentSlide++
-    })
-  } 
+    // console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
+    console.log(currentSlide);
+    
+          this.setState({
+            pageNumber: currentSlide++
+          })
+          let projectNum = this.state.pageNumber;
+          if(projectNum <= 3){
+            let GAProjectTitle = this.props.props.project[projectNum];
+
+            console.log(projectNum, GAProjectTitle.name);
+
+            projectNum++;
+            return GAProjectTitle.name;
+          }else{
+            console.log(projectNum, 'nothing to see here');
+          };
+  };
 
   render() {
     const carousel1 = {
@@ -64,10 +78,16 @@ export default class Carousel extends Component {
           }
         }]
     }
+    // let pageNumber = this.state.pageNumber;
+    // // console.log(pageNumber);
+    // let projectIndex = this.props.props.project[pageNumber];
+    // let projectName = this.props.props.project[this.state.pageNumber].name;
+    // // console.log('projectIndex', projectIndex);
+    // // console.log('projectName', projectName);
 
-    ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    // ReactGA.initialize('UA-122935699-1');
+    // ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
+    // ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
       <div id="carousel-container">

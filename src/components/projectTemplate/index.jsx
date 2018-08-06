@@ -22,6 +22,10 @@ const ProjectTemp = props => {
 		);
 	});
 
+	// Google Analytics
+	// ReactGA.initialize('UA-122935699-1');
+ //    ReactGA.ga('send', 'pageview', '/project');
+
 	return(
 		<div id="projectTempContainer">
 			<table>

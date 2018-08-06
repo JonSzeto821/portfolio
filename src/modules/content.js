@@ -20,6 +20,7 @@ const initialState = {
   },
   project: [
     {
+      projectNum: 1,
       name: 'Spotify Global',
       screenshot: [
         {
@@ -68,6 +69,7 @@ const initialState = {
       }
     },
     {
+      projectNum: 2,
       name: 'Soccer Tactics',
       screenshot: [
         {
@@ -137,6 +139,7 @@ const initialState = {
       }
     },
     {
+      projectNum: 3,
       name: 'Nutrition Search',
       screenshot: [
         {
@@ -195,6 +198,7 @@ const initialState = {
       }
     },
     {
+      projectNum: 4,
       name: 'Quiz App',
       screenshot: [
         {
