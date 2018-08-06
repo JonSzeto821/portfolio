@@ -12,7 +12,7 @@ const Contact = props => {
 	const [email, linkedin, github, location, phone, icon] = [props.links.contact.email, props.links.linkedin, props.links.github, props.location, props.phone, props.icons];
 
     ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('send', 'pageview', '/contact');
+    ReactGA.ga('send', 'pageview', '/contact'); 
     // ReactGA.pageview(window.location.pathname + window.location.search);
 
 	return(

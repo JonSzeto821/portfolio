@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
  
 const About = props => {
 	ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('send', 'pageview', '/about');
+    ReactGA.ga('send', 'pageview', '/about'); 
 
 	return(
 		<div id="aboutContainer">
