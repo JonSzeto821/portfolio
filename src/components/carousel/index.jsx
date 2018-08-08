@@ -15,6 +15,10 @@ import quizIcon from '../../styles/assets/quiz_icon.svg';
 import contactIcon from '../../styles/assets/contact_icon.svg';
 import ReactGA from 'react-ga';
 
+import swipeIcon from '../../styles/assets/swipe_icon.svg';
+import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
+
+
 export default class Carousel extends Component {
 
   constructor(props) {
@@ -36,22 +40,22 @@ export default class Carousel extends Component {
 
   afterChangeHandler = currentSlide => {
     // console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
-    console.log(currentSlide);
+    // console.log(currentSlide);
     
           this.setState({
             pageNumber: currentSlide++
           })
-          let projectNum = this.state.pageNumber;
-          if(projectNum <= 3){
-            let GAProjectTitle = this.props.props.project[projectNum];
+          // let projectNum = this.state.pageNumber;
+          // if(projectNum <= 3){
+          //   let GAProjectTitle = this.props.props.project[projectNum];
 
-            console.log(projectNum, GAProjectTitle.name);
+          //   console.log(projectNum, GAProjectTitle.name);
 
-            projectNum++;
-            return GAProjectTitle.name;
-          }else{
-            console.log(projectNum, 'nothing to see here');
-          };
+          //   projectNum++;
+          //   return GAProjectTitle.name;
+          // }else{
+          //   console.log(projectNum, 'nothing to see here');
+          // };
   };
 
   render() {
@@ -85,12 +89,26 @@ export default class Carousel extends Component {
     // // console.log('projectIndex', projectIndex);
     // // console.log('projectName', projectName);
 
+    // Google Analytics
     // ReactGA.initialize('UA-122935699-1');
+    // ReactGA.ga('set', 'page', '/');
+    // ReactGA.ga('send', 'pageview');
+
+    // ReactGA.modalview('/carousel');
+    // ReactGA.ga('send', 'pageview', '/carousel');
     // ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
+
     // ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
       <div id="carousel-container">
+          
+          <div id="overlay"> 
+            <div id="page-interaction">
+            <h2>Navigation: Swipe left/right</h2>
+              <img className="swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
+            </div>
+          </div>
           <div id="pageNumber">{this.state.pageNumber + 1}|6</div>
           <Slider
             {...carousel1}
@@ -162,6 +180,7 @@ export default class Carousel extends Component {
               <img className="picSize" id="contactIcon" src={contactIcon} alt="Contact Icon" />
             </div>
           </Slider>
+
       </div>
     );
   }

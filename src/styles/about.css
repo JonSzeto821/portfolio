@@ -32,6 +32,7 @@
   min-height: 70vh;
   color: #696969;
   width: 100%;
+  font-size: 14px;
 }
 
 #page-interaction img {
@@ -65,6 +66,7 @@
 
   #aboutContainer {
     min-height: 100vh;
+    font-size: 16px;
   }
 
   #aboutContainer table {

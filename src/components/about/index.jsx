@@ -5,8 +5,16 @@ import '../../styles/about.css';
 import ReactGA from 'react-ga';
  
 const About = props => {
-	ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('send', 'pageview', '/about'); 
+	// ReactGA.initialize('UA-122935699-1');
+    // ReactGA.ga('send', 'pageview', '/about'); 
+    // ReactGA.modalview('/carousel/init');
+
+    //Google Analytics
+    ReactGA.initialize('UA-122935699-1');
+    ReactGA.ga('set', 'page', '/about');
+    ReactGA.ga('send', 'pageview');
+
+    // ReactGA.modalview('/about');
 
 	return(
 		<div id="aboutContainer">
@@ -39,6 +47,10 @@ const About = props => {
 					</tr>
 				</tbody>
 			</table>
+			<br />
+			<br />
+			<br />
+
 		</div>
 	);
 };

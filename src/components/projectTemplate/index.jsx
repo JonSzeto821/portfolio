@@ -11,7 +11,7 @@ const ProjectTemp = props => {
 	const [name, description, icon] = [props.project.name, props.project.description, props.icons]
 	const extraContent = props.project.additionalContent || '';
 	const [technology, application, github] = [props.project.technology, props.project.links.application, props.project.links.github];
-	
+	console.log(name);
 	let screenshots = image.map((arrayItem, i) => {
 		const [name, filePath, altText] = [arrayItem.name, arrayItem.image, arrayItem.altText];
 
@@ -23,8 +23,11 @@ const ProjectTemp = props => {
 	});
 
 	// Google Analytics
-	// ReactGA.initialize('UA-122935699-1');
- //    ReactGA.ga('send', 'pageview', '/project');
+	ReactGA.initialize('UA-122935699-1');
+	ReactGA.ga('set', 'page', `/project/${name}`);
+    ReactGA.ga('send', 'pageview');
+    // ReactGA.modalview(`/carousel/projects/${name}`);
+    // ReactGA.modalview(`/projects`);
 
 	return(
 		<div id="projectTempContainer">

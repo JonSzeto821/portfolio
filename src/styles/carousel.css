@@ -46,7 +46,7 @@
 
 .carouselBottom img {
   /*margin: calc(100vh / 50) auto 0;*/
-  margin: 20px auto 0;
+  margin: 15px auto 0;
   /*margin-top: calc(100vh / 50);*/
   /*margin-bottom: 0;*/
 }
@@ -76,6 +76,66 @@
   > div.slick-slide.slick-active.slick-current
   img {
   filter: invert(0.92);
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  position: fixed;
+  z-index: 999;
+  animation: fade-out 3s forwards;
+  animation-delay: 3s;
+  pointer-events: none;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 20vw;
+}
+
+#overlay img {
+  position: absolute;
+  /*bottom: 0;*/
+  animation: rotate 3s forwards;
+  left: 40vw;
+  animation-delay: 2s;
+}
+
+@keyframes rotate {
+  25% {
+    left: 20vw;
+    transform: rotate(-5deg);
+  }
+  75% {
+    left: 60vw;
+    transform: rotate(5deg);
+  }
+  100% {
+    left: 40vw;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fade-out {
+  /* You could think of as "step 1" */
+  0% {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+  }
+  /* You could think of as "step 2" */
+  80% {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+
+  90% {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
 }
 
 #carousel-container,
@@ -145,6 +205,10 @@
 
   .carouselBottom h3 {
     margin-top: 10px;
+  }
+
+  .carouselBottom img {
+    margin: calc(100vh / 50) auto 0;
   }
 
   #carousel-container {
