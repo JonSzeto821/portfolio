@@ -1,7 +1,7 @@
 const initialState = {
   about: {
     name: 'Jon Szeto',
-    image: '../assets/HTML5_Logo.svg',
+    image: '../assets/profile-pic.jpeg',
     bio: {
       p1:
         'Front-end engineer in training..... I’ve had prior software development experience as a Systems Analyst. Transitioned into a customer facing role. I coordinated with software integrations teams from publishers and for-profit institutions. I provided assistance with familiarizing them to the company’s APIs and how they are used. This peaked my interest into understanding how they APIs are built. Between this and wanting to be back on a development team and building products again, led me down the engineering route.',

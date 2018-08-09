@@ -97,7 +97,7 @@
   position: absolute;
   /*bottom: 0;*/
   animation: rotate 3s forwards;
-  left: 40vw;
+  left: 35vw;
   animation-delay: 1.5s;
 }
 
@@ -164,7 +164,7 @@
 }
 
 #page-interaction h2 {
-  color: #808080;
+  color: #f2f2f2;
   font-style: italic;
 }
 
@@ -217,17 +217,21 @@
     font-size: 32px;
   }
 
+  #overlay img {
+    left: 40vw;
+  }
+
   @keyframes rotate {
     33% {
-      left: 7vw;
+      left: 20vw;
       transform: rotate(-15deg);
     }
     66% {
-      left: 62vw;
+      left: 65vw;
       transform: rotate(15deg);
     }
     100% {
-      left: 35vw;
+      left: 40vw;
       /*transform: rotate(-10deg);*/
     }
   }
@@ -286,6 +290,12 @@
     font-weight: 100;
     width: 75%;
   }
+
+  /*#overlay {
+    width: 1500px;
+    margin: auto;
+    text-align: center;
+  }*/
 
   #page-interaction h2 {
     /*border: 2px solid white;*/

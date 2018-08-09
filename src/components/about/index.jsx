@@ -36,13 +36,6 @@ const About = props => {
 							<div>{props.props.about.bio.p2}</div>
 						</td>
 					</tr>
-{/*					<tr>
-						<td id="page-interaction">
-							<img className="swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
-							or
-							<img className="swipe" name='arrowkeys' src={arrowkeysIcon} alt='arrowkeysIcon' />
-						</td>
-					</tr>*/}
 				</tbody>
 			</table>
 			<br />
