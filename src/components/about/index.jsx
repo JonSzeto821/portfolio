@@ -9,9 +9,10 @@ const About = props => {
 
     //Google Analytics
     ReactGA.initialize('UA-123746366-1');
+    ReactGA.ga('send', 'pageview', '/about');
     // ReactGA.ga('set', 'page', '/about');
     // ReactGA.ga('send', 'pageview');
-    ReactGA.ga('send', 'pageview', '/about'); 
+    // ReactGA.ga('send', 'pageview', '/about'); 
     // ReactGA.modalview('/about');
 
 	return(

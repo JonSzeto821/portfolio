@@ -91,9 +91,9 @@ export default class Carousel extends Component {
     // // console.log('projectName', projectName);
 
     // Google Analytics
-    ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('set', 'page', '/');
-    ReactGA.ga('send', 'pageview');
+    // ReactGA.initialize('UA-122935699-1');
+    // ReactGA.ga('set', 'page', '/');
+    // ReactGA.ga('send', 'pageview');
 
     // ReactGA.modalview('/carousel');
     // ReactGA.ga('send', 'pageview', '/carousel');
