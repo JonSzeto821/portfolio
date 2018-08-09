@@ -16,6 +16,7 @@ import contactIcon from '../../styles/assets/contact_icon.svg';
 import ReactGA from 'react-ga';
 
 import swipeIcon from '../../styles/assets/swipe_icon.svg';
+import swipeIcon2 from '../../styles/assets/swipe2_icon.svg';
 import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
 
 
@@ -102,11 +103,10 @@ export default class Carousel extends Component {
 
     return (
       <div id="carousel-container">
-          
           <div id="overlay"> 
             <div id="page-interaction">
-            <h2>Navigation: Swipe left/right</h2>
-              <img className="swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
+              <h2>Navigation: Swipe left/right</h2>
+              <img className="swipe" name='swipe' src={swipeIcon2} alt='swipeIcon' />
             </div>
           </div>
           <div id="pageNumber">{this.state.pageNumber + 1}|6</div>

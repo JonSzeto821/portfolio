@@ -1,6 +1,4 @@
 import React from 'react';
-import swipeIcon from '../../styles/assets/swipe_icon.svg';
-import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
 import '../../styles/about.css';
 import ReactGA from 'react-ga';
  
@@ -38,13 +36,13 @@ const About = props => {
 							<div>{props.props.about.bio.p2}</div>
 						</td>
 					</tr>
-					<tr>
+{/*					<tr>
 						<td id="page-interaction">
 							<img className="swipe" name='swipe' src={swipeIcon} alt='swipeIcon' />
 							or
 							<img className="swipe" name='arrowkeys' src={arrowkeysIcon} alt='arrowkeysIcon' />
 						</td>
-					</tr>
+					</tr>*/}
 				</tbody>
 			</table>
 			<br />

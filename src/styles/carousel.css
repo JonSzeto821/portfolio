@@ -84,12 +84,12 @@
   margin: auto;
   position: fixed;
   z-index: 999;
-  animation: fade-out 3s forwards;
+  animation: fade-out 2.5s forwards;
   animation-delay: 3s;
   pointer-events: none;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding-top: 20vw;
 }
 
@@ -98,21 +98,51 @@
   /*bottom: 0;*/
   animation: rotate 3s forwards;
   left: 40vw;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
+}
+
+.swipe {
+  display: inline-block;
+  width: 25%;
+  font-weight: bold;
+  filter: invert(0.65);
 }
 
 @keyframes rotate {
+  /*  0% {
+    left: 10vw;
+  }
+  10% {
+    left: 5vw;
+    transform: rotate(-5deg);
+  }
   25% {
-    left: 20vw;
+    left: 10vw;
     transform: rotate(-5deg);
   }
   75% {
     left: 60vw;
     transform: rotate(5deg);
   }
+  90% {
+    left: 10vw;
+    transform: rotate(-5deg);
+  }
   100% {
     left: 40vw;
     transform: rotate(0deg);
+  }*/
+  33% {
+    left: 7vw;
+    transform: rotate(-15deg);
+  }
+  66% {
+    left: 62vw;
+    transform: rotate(15deg);
+  }
+  100% {
+    left: 35vw;
+    /*transform: rotate(-10deg);*/
   }
 }
 
@@ -123,19 +153,19 @@
     opacity: 1;
   }
   /* You could think of as "step 2" */
-  80% {
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 1;
-  }
-
-  90% {
-    background: rgba(0, 0, 0, 0.4);
+  85% {
+    background: rgba(0, 0, 0, 0.8);
     opacity: 1;
   }
   100% {
     background: rgba(0, 0, 0, 0);
     opacity: 0;
   }
+}
+
+#page-interaction h2 {
+  color: #808080;
+  font-style: italic;
 }
 
 #carousel-container,
@@ -165,6 +195,41 @@
   .carouselBottom h3 {
     margin: 0 2.5px;
     font-size: 22px;
+  }
+
+  #page-interaction h2 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .swipe {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .swipe {
+    width: 15%;
+  }
+
+  #page-interaction h2 {
+    font-size: 32px;
+  }
+
+  @keyframes rotate {
+    33% {
+      left: 7vw;
+      transform: rotate(-15deg);
+    }
+    66% {
+      left: 62vw;
+      transform: rotate(15deg);
+    }
+    100% {
+      left: 35vw;
+      /*transform: rotate(-10deg);*/
+    }
   }
 }
 
@@ -220,6 +285,11 @@
     text-align: center;
     font-weight: 100;
     width: 75%;
+  }
+
+  #page-interaction h2 {
+    /*border: 2px solid white;*/
+    text-decoration: underline;
   }
 }
 
