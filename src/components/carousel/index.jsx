@@ -15,15 +15,15 @@ import quizIcon from '../../styles/assets/quiz_icon.svg';
 import contactIcon from '../../styles/assets/contact_icon.svg';
 import ReactGA from 'react-ga';
 
-import swipeIcon from '../../styles/assets/swipe_icon.svg';
+// import swipeIcon from '../../styles/assets/swipe_icon.svg';
 import swipeIcon2 from '../../styles/assets/swipe2_icon.svg';
-import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
+// import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
 
 
 export default class Carousel extends Component {
 
   constructor(props) {
-    console.log(props);
+    // console.log(props);
     super(props);
     this.state = {
       nav1: null,
@@ -91,9 +91,9 @@ export default class Carousel extends Component {
     // // console.log('projectName', projectName);
 
     // Google Analytics
-    // ReactGA.initialize('UA-122935699-1');
-    // ReactGA.ga('set', 'page', '/');
-    // ReactGA.ga('send', 'pageview');
+    ReactGA.initialize('UA-122935699-1');
+    ReactGA.ga('set', 'page', '/');
+    ReactGA.ga('send', 'pageview');
 
     // ReactGA.modalview('/carousel');
     // ReactGA.ga('send', 'pageview', '/carousel');
@@ -105,7 +105,7 @@ export default class Carousel extends Component {
       <div id="carousel-container">
           <div id="overlay"> 
             <div id="page-interaction">
-              <h2>Navigation: Swipe left/right</h2>
+              <h2>Navigation: Swipe Left/Right</h2>
               <img className="swipe" name='swipe' src={swipeIcon2} alt='swipeIcon' />
             </div>
           </div>

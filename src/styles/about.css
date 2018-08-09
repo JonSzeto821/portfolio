@@ -53,8 +53,8 @@
     text-align: left;
   }
 
-  .bio {
-    padding: 15px 0;
+  .bio td {
+    padding: 5px 0;
   }
 
   .swipe {

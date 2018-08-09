@@ -8,10 +8,10 @@ const About = props => {
     // ReactGA.modalview('/carousel/init');
 
     //Google Analytics
-    ReactGA.initialize('UA-122935699-1');
-    ReactGA.ga('set', 'page', '/about');
-    ReactGA.ga('send', 'pageview');
-
+    ReactGA.initialize('UA-123746366-1');
+    // ReactGA.ga('set', 'page', '/about');
+    // ReactGA.ga('send', 'pageview');
+    ReactGA.ga('send', 'pageview', '/about'); 
     // ReactGA.modalview('/about');
 
 	return(
