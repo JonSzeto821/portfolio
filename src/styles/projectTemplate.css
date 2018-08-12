@@ -164,8 +164,16 @@
 
   #projectTempContainer > table {
     text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
+    margin: auto;
     padding: 0;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  #projectTempContainer > table {
+    width: 70%;
   }
 }
