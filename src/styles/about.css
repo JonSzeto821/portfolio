@@ -76,3 +76,10 @@
     margin-left: 20px;
   }
 }
+
+@media only screen and (min-width: 1001px) {
+  #aboutContainer table {
+    width: 60%;
+    margin: auto;
+  }
+}
