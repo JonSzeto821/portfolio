@@ -168,10 +168,15 @@
   font-style: italic;
 }
 
-#carousel-container,
+/*#carousel-container,*/
 .carouselBottom,
 .carouselTop {
   margin: 0;
+}
+
+#carousel-container {
+  margin: auto;
+  /*border: 2px dashed blue;*/
 }
 
 #carousel-container #pageNumber {
