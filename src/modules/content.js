@@ -4,7 +4,7 @@ const initialState = {
     image: '../assets/profile-pic.jpeg',
     bio: {
       p1:
-        'Front-end engineer in training..... I’ve had prior software development experience as a Systems Analyst. Transitioned into a customer facing role. I coordinated with software integrations teams from publishers and for-profit institutions. I provided assistance with familiarizing them to the company’s APIs and how they are used. This peaked my interest into understanding how they APIs are built. Between this and wanting to be back on a development team and building products again, led me down the engineering route.',
+        'Aspiring Front-End Engineer in training. I have had prior software development experience as a Systems Analyst at a Financial institution. Following that, I transitioned into a customer facing role, as an Integration Manager, at an Education Technology company. I coordinated with software integrations teams from publishers and for-profit institutions. I instructed teams over the usage of the company’s APIs and workflows for product models. This peaked my interest into understanding how APIs are built. With this interest and desire to be back on the development side, I found myself going down the engineering route.',
       p2:
         'I am currently based in Raleigh, NC. My interests include technology, live music, soccer, and powerlifting.'
     },
@@ -40,7 +40,7 @@ const initialState = {
         }
       ],
       description:
-        'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify',
+        'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify.',
       technology: [
         {
           name: 'HTML',
@@ -89,7 +89,7 @@ const initialState = {
         }
       ],
       description:
-        'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy',
+        'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy.',
       additionalContent: 'Demo Username: PasswordIsTaco; Password: taco',
       technology: [
         {
