@@ -13,7 +13,7 @@ import soccerIcon from '../../styles/assets/soccer_icon.svg';
 import nutritionIcon from '../../styles/assets/nutrition_icon.svg';
 import quizIcon from '../../styles/assets/quiz_icon.svg';
 import contactIcon from '../../styles/assets/contact_icon.svg';
-import ReactGA from 'react-ga';
+
 
 // import swipeIcon from '../../styles/assets/swipe_icon.svg';
 import swipeIcon2 from '../../styles/assets/swipe2_icon.svg';
@@ -180,7 +180,6 @@ export default class Carousel extends Component {
               <img className="picSize" id="contactIcon" src={contactIcon} alt="Contact Icon" />
             </div>
           </Slider>
-
       </div>
     );
   }

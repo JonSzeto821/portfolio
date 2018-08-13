@@ -3,10 +3,6 @@ import '../../styles/about.css';
 import ReactGA from 'react-ga';
  
 const About = props => {
-	// ReactGA.initialize('UA-122935699-1');
-    // ReactGA.ga('send', 'pageview', '/about'); 
-    // ReactGA.modalview('/carousel/init');
-
     //Google Analytics
     ReactGA.initialize('UA-123746366-1');
     ReactGA.ga('send', 'pageview', '/about');
@@ -34,7 +30,8 @@ const About = props => {
 					<tr className="bio">
 						<td>
 							<div>{props.props.about.bio.p1}</div><br />
-							<div>{props.props.about.bio.p2}</div>
+							{/*<div>{props.props.about.bio.p2}</div><br />*/}
+							<div>{props.props.about.bio.p3}</div>
 						</td>
 					</tr>
 				</tbody>

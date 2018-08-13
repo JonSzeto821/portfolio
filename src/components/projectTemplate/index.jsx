@@ -3,15 +3,13 @@ import Technology from '../technology';
 import Links from '../projectLinks';
 import '../../styles/projectTemplate.css';
 import ImageSlider from '../imageSlider';
-import ReactGA from 'react-ga';
-
 
 const ProjectTemp = props => {
 	const image = props.project.screenshot || [];
 	const [name, description, icon] = [props.project.name, props.project.description, props.icons]
 	const extraContent = props.project.additionalContent || '';
 	const [technology, application, github] = [props.project.technology, props.project.links.application, props.project.links.github];
-	// console.log(name);
+
 	let screenshots = image.map((arrayItem, i) => {
 		const [name, filePath, altText] = [arrayItem.name, arrayItem.image, arrayItem.altText];
 
