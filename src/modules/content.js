@@ -4,11 +4,11 @@ const initialState = {
     image: '../assets/profile-pic.jpeg',
     bio: {
       p1:
-        'Aspiring Front-End Engineer in training. I have had prior software development experience, as a Systems Analyst, at a Financial Institution. Following that, I transitioned into a customer facing role, as an Integration Manager, at an Education Technology company.',
+        'Aspiring Front-End Engineer (with Full-Stack capabilities) in training. I have had prior software development experience, as a Systems Analyst, at a Financial Institution. Following that, I transitioned into a customer facing role, as an Integration Manager, at an Education Technology company.',
       p2:
         'I coordinated with software integration teams from publishers and for-profit institutions. I instructed teams over the usage of the company’s APIs and workflows for product models. This peaked(?) my interest into understanding how APIs are built. With this interest and desire to be back on the development side, I found myself going down the engineering route.',
       p3:
-        'I am currently based in Raleigh, NC. Other interests of mine, outside of development, are: attending live music concerts, over anaylzying my favorite soccer team (Liverpool), and powerlifting.'
+        'I am currently based in Raleigh, NC. Other interests of mine outside of development are: attending live music concerts, over anaylzying my favorite soccer team (Liverpool), and powerlifting.'
     },
     links: {
       github: 'https://github.com/JonSzeto821',
