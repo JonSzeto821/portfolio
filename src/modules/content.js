@@ -241,7 +241,7 @@ const initialState = {
       ],
       links: {
         github: 'https://github.com/JonSzeto821/quiz-app',
-        application: 'https://jonszeto821.github.io/quiz-app/'
+        application: 'https://jonszeto821.github.io/lfc-quiz-app'
       }
     }
   ],
