@@ -105,7 +105,8 @@ export default class Carousel extends Component {
       <div id="carousel-container">
           <div id="overlay"> 
             <div id="page-interaction">
-              <h2>Navigation: Swipe Left/Right</h2>
+              <h2>Navigation</h2>
+              <h3>Click Tiles (Left) or Swipe Left/Right</h3>
               <img className="swipe" name='swipe' src={swipeIcon2} alt='swipeIcon' />
             </div>
           </div>

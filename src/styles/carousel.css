@@ -163,9 +163,18 @@
   }
 }
 
-#page-interaction h2 {
+#page-interaction h2,
+#page-interaction h3 {
   color: #f2f2f2;
   font-style: italic;
+}
+
+#page-interaction h2 {
+  margin-bottom: 5px;
+}
+
+#page-interaction h3 {
+  margin-top: 5px;
 }
 
 /*#carousel-container,*/
