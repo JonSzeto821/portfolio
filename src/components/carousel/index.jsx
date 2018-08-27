@@ -13,12 +13,7 @@ import soccerIcon from '../../styles/assets/soccer_icon.svg';
 import nutritionIcon from '../../styles/assets/nutrition_icon.svg';
 import quizIcon from '../../styles/assets/quiz_icon.svg';
 import contactIcon from '../../styles/assets/contact_icon.svg';
-
-
-// import swipeIcon from '../../styles/assets/swipe_icon.svg';
 import swipeIcon2 from '../../styles/assets/swipe2_icon.svg';
-// import arrowkeysIcon from '../../styles/assets/arrowkeys_icon.svg';
-
 
 export default class Carousel extends Component {
 
@@ -39,6 +34,13 @@ export default class Carousel extends Component {
     });
   }
 
+  jumpToSlide = e => {
+    // console.log('jelly beans', e);
+    // console.log(this);
+    this.slider2.slickGoTo(5);
+
+  };
+
   afterChangeHandler = currentSlide => {
     // console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
     // console.log(currentSlide);
@@ -46,17 +48,7 @@ export default class Carousel extends Component {
           this.setState({
             pageNumber: currentSlide++
           })
-          // let projectNum = this.state.pageNumber;
-          // if(projectNum <= 3){
-          //   let GAProjectTitle = this.props.props.project[projectNum];
-
-          //   console.log(projectNum, GAProjectTitle.name);
-
-          //   projectNum++;
-          //   return GAProjectTitle.name;
-          // }else{
-          //   console.log(projectNum, 'nothing to see here');
-          // };
+          // console.log('pageNumber', this.state);
   };
 
   render() {
@@ -76,6 +68,7 @@ export default class Carousel extends Component {
       focusOnSelect: true,
       arrows: false,
       vertical: true,
+      vericalSwiping: true,
       responsive: [{
           breakpoint: 700,
           settings: {
@@ -100,7 +93,7 @@ export default class Carousel extends Component {
     // ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
 
     // ReactGA.pageview(window.location.pathname + window.location.search);
-
+    // console.log('taco', this);
     return (
       <div id="carousel-container">
           <div id="overlay"> 
@@ -116,7 +109,10 @@ export default class Carousel extends Component {
             className="carouselTop content-col"
           >
             <div className="content-container">
-              <About props={this.props.props} />
+              <About 
+                props={this.props.props}
+                jumpToSlide={this.jumpToSlide}
+               />
             </div>
             <div className="content-container">
               <Project1 

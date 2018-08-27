@@ -3,7 +3,6 @@ import '../../styles/button.css';
 
 const ProjectLinks = props => {
 	const [hrefApp, hrefGitHub] = [props.application, props.github];
-
 	return(
 		<div>
 			<table className="borderStyle">
