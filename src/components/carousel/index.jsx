@@ -38,7 +38,6 @@ export default class Carousel extends Component {
     // console.log('jelly beans', e);
     // console.log(this);
     this.slider2.slickGoTo(5);
-
   };
 
   afterChangeHandler = currentSlide => {
@@ -52,6 +51,7 @@ export default class Carousel extends Component {
   };
 
   render() {
+    //main body carousel
     const carousel1 = {
       asNavFor: this.state.nav2,
       ref: slider => (this.slider1 = slider),
@@ -60,15 +60,26 @@ export default class Carousel extends Component {
       afterChange: this.afterChangeHandler
     }
 
+    //navigation carousel
     const carousel2 = {
       asNavFor: this.state.nav1,
       ref: slider => (this.slider2 = slider),
+      infinite: true,
       slidesToShow: 4,
+      slidesToScroll: 1,
+      vertical: true,
+      verticalSwiping: true,
       swipeToSlide: true,
       focusOnSelect: true,
       arrows: false,
-      vertical: true,
-      vericalSwiping: true,
+
+      // draggable: true,
+      // beforeChange: function(currentSlide, nextSlide) {
+      //   console.log("before change", currentSlide, nextSlide);
+      // },
+      // afterChange: function(currentSlide) {
+      //   console.log("after change", currentSlide);
+      // },
       responsive: [{
           breakpoint: 700,
           settings: {
