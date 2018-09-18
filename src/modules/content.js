@@ -8,7 +8,7 @@ const initialState = {
       p2:
         'I coordinated with software integration teams from publishers and for-profit institutions. I instructed teams over the usage of the company’s APIs and workflows for product models. This piqued my interest into understanding how APIs are built. With this and a desire to be back on the development side, I found myself going down the engineering route.',
       p3:
-        'I am currently based in Raleigh, NC. Other interests of mine outside of development are: attending  music concerts and festivals, over anaylzying my favorite soccer team (Liverpool), and powerlifting.'
+        'I am currently based in Raleigh, NC. Other interests of mine outside of development are: attending  music concerts and festivals, over anaylzying my favorite soccer team (Liverpool FC), and powerlifting.'
     },
     links: {
       github: 'https://github.com/JonSzeto821',
