@@ -10,6 +10,7 @@ const Technology = props => {
 	
 	let techItem = techList.map((arrayItem, i) => {
 		let [name, logo, altText] = [arrayItem.name, arrayItem.logo, arrayItem.altText];
+		
 		return(
 			<img style={techLogo} className="techLogo" key={i} name={name} src={logo} alt={altText} />
 		);

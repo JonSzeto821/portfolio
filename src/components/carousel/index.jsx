@@ -16,9 +16,7 @@ import contactIcon from '../../styles/assets/contact_icon.svg';
 import swipeIcon2 from '../../styles/assets/swipe2_icon.svg';
 
 export default class Carousel extends Component {
-
   constructor(props) {
-    // console.log(props);
     super(props);
     this.state = {
       nav1: null,
@@ -35,19 +33,13 @@ export default class Carousel extends Component {
   }
 
   jumpToSlide = e => {
-    // console.log('jelly beans', e);
-    // console.log(this);
     this.slider2.slickGoTo(5);
   };
 
   afterChangeHandler = currentSlide => {
-    // console.log('currentSlide', this.props.props.project[this.state.pageNumber].name);
-    // console.log(currentSlide);
-    
-          this.setState({
-            pageNumber: currentSlide++
-          })
-          // console.log('pageNumber', this.state);
+    this.setState({
+      pageNumber: currentSlide++
+    })
   };
 
   render() {
@@ -72,14 +64,6 @@ export default class Carousel extends Component {
       swipeToSlide: true,
       focusOnSelect: true,
       arrows: false,
-
-      // draggable: true,
-      // beforeChange: function(currentSlide, nextSlide) {
-      //   console.log("before change", currentSlide, nextSlide);
-      // },
-      // afterChange: function(currentSlide) {
-      //   console.log("after change", currentSlide);
-      // },
       responsive: [{
           breakpoint: 700,
           settings: {
@@ -87,24 +71,7 @@ export default class Carousel extends Component {
           }
         }]
     }
-    // let pageNumber = this.state.pageNumber;
-    // // console.log(pageNumber);
-    // let projectIndex = this.props.props.project[pageNumber];
-    // let projectName = this.props.props.project[this.state.pageNumber].name;
-    // // console.log('projectIndex', projectIndex);
-    // // console.log('projectName', projectName);
-
-    // Google Analytics
-    // ReactGA.initialize('UA-122935699-1');
-    // ReactGA.ga('set', 'page', '/');
-    // ReactGA.ga('send', 'pageview');
-
-    // ReactGA.modalview('/carousel');
-    // ReactGA.ga('send', 'pageview', '/carousel');
-    // ReactGA.ga('send', 'pageview', this.props.props.project[this.state.pageNumber].name);
-
-    // ReactGA.pageview(window.location.pathname + window.location.search);
-    // console.log('taco', this);
+    
     return (
       <div id="carousel-container">
           <div id="overlay"> 

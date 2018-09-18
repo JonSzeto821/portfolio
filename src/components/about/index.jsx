@@ -4,15 +4,9 @@ import ReactGA from 'react-ga';
 import '../../styles/button.css';
  
 const About = props => {
-	// console.log(this, props);
-	// console.log(props);
     //Google Analytics
     ReactGA.initialize('UA-123746366-1');
     ReactGA.ga('send', 'pageview', '/about');
-    // ReactGA.ga('set', 'page', '/about');
-    // ReactGA.ga('send', 'pageview');
-    // ReactGA.ga('send', 'pageview', '/about'); 
-    // ReactGA.modalview('/about');
 
 	return(
 		<div id="aboutContainer">
@@ -33,7 +27,6 @@ const About = props => {
 					<tr className="bio">
 						<td>
 							<div>{props.props.about.bio.p1}</div><br />
-							{/*<div>{props.props.about.bio.p2}</div><br />*/}
 							<div>{props.props.about.bio.p3}</div>
 						</td>
 					</tr>

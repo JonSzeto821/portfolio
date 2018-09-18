@@ -9,14 +9,11 @@ import '../../styles/projectTemplate.css';
 import ReactGA from 'react-ga';
 
 const Contact = props => {
-	const [email, linkedin, github, location, phone, icon] = [props.links.contact.email, props.links.linkedin, props.links.github, props.location, props.phone, props.icons];
-
 	//Google Analytics
     ReactGA.initialize('UA-123746366-1');
-    // ReactGA.ga('set', 'page', '/contact');
-    // ReactGA.ga('send', 'pageview');
-    // ReactGA.modalview('/contact');
     ReactGA.ga('send', 'pageview', '/contact'); 
+
+	const [email, linkedin, github, location, phone, icon] = [props.links.contact.email, props.links.linkedin, props.links.github, props.location, props.phone, props.icons];
 
 	return(
 		<div id="contactContainer">

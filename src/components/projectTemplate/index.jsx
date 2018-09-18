@@ -20,13 +20,6 @@ const ProjectTemp = props => {
 		);
 	});
 
-	// Google Analytics
-	// ReactGA.initialize('UA-122935699-1');
-	// ReactGA.ga('set', 'page', `/project/${name}`);
-    // ReactGA.ga('send', 'pageview');
-    // ReactGA.modalview(`/carousel/projects/${name}`);
-    // ReactGA.modalview(`/projects`);
-
 	return(
 		<div id="projectTempContainer">
 			<table>
@@ -35,7 +28,7 @@ const ProjectTemp = props => {
 						<td className="title">
 							<h2>{name}</h2> 
 							<img 
-								className={["iconSize", "hide-mobile"].join(' ')} // remove invert
+								className={["iconSize", "hide-mobile"].join(' ')}
 								name='name' 
 								src={icon.image} 
 								alt={icon.altText} 
