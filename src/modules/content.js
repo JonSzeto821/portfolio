@@ -89,7 +89,7 @@ const initialState = {
         }
       ],
       description:
-        'Soccer Tactics was built with the intention of sharing football tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy.',
+        'Soccer Tactics was built with the intention of sharing soccer tactics. The app allows users to create, fork, modify, and share soccer formations and in-game strategy.',
       additionalContent: 'Demo Username: PasswordIsTaco; Password: taco',
       technology: [
         {
