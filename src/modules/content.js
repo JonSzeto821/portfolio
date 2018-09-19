@@ -41,7 +41,7 @@ const initialState = {
         }
       ],
       description:
-        'The application was developed with the objective of identifying the current top artists based on country. The application utilizes an API created by Spotify.',
+        'The application was developed with the objective of identifying the current top artists based on country. The application utilizes APIs provided by Google Maps and Spotify.',
       technology: [
         {
           name: 'HTML',
