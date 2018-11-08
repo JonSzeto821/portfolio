@@ -1,7 +1,7 @@
 .techLogo {
   display: inline-block;
   height: 50px;
-  width: calc(100% * (1 / 4) - 20px - 10px);
+  width: calc(100% * (1 / 4) - 30px);
   padding-top: 7.5px;
   margin: 0 5px 0 0;
 }
@@ -12,13 +12,13 @@
 
 @media only screen and (min-width: 401px) {
   .techLogo {
-    width: calc(100% * (1 / 4) - 40px - 1px);
+    width: calc(100% * (1 / 4) - 40px);
   }
 }
 
 @media only screen and (min-width: 501px) {
   .techLogo {
-    width: calc(100% * (1 / 4) - 55px - 15px);
+    width: calc(100% * (1 / 4) - 70px);
   }
 }
 

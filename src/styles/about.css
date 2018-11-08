@@ -10,7 +10,6 @@
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  /*border: 1px solid black;*/
   user-select: none;
 }
 
@@ -21,10 +20,10 @@
 
 #aboutContainer {
   padding: 0 5px 5px 5px;
-  background-color: #f2f2f2;
+  background-color: var(--color-light-grey);
   text-align: center;
   min-height: 70vh;
-  color: #696969;
+  color: var(--color-dark-grey);
   width: 100%;
   font-size: 14px;
 }
