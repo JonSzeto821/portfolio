@@ -10,15 +10,15 @@
 
 /*Colors*/
 .green {
-  background-color: rgb(16, 172, 132);
+  background-color: #007a4b; /* rgb(16, 172, 132)*/
 }
 
 .blue {
-  background-color: rgb(10, 189, 227);
+  background-color: #2574a9; /* rgb(10, 189, 227)*/
 }
 
 .purple {
-  background-color: rgb(95, 39, 205);
+  background-color: #8859b6; /*  rgb(95, 39, 205)*/
 }
 
 .orange {
@@ -26,7 +26,7 @@
 }
 
 .red {
-  background-color: rgb(238, 82, 83);
+  background-color: #e00000; /*rgb(238, 82, 83)*/
 }
 
 .yellow {
@@ -170,7 +170,7 @@
   font-weight: 300;
   text-align: center;
   width: 100vw;
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
 }
 
 @media only screen and (min-width: 351px) {

@@ -4,8 +4,8 @@
 
 :root {
   /*Colors*/
-  --color-light-grey: rgb(242, 242, 242);
-  --color-dark-grey: rgb(105, 105, 105);
+  --color-light-grey: rgb(246, 246, 246); /*#F6F6F6 rgb(246, 246, 246)*/
+  --color-dark-grey: rgb(63, 63, 63); /*#3F3F3F rgb(63, 63, 63)*/
   --color-grey: rgb(164, 164, 164);
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
